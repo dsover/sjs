@@ -4,16 +4,21 @@ var express = require('express');
 var fs      = require('fs');
 var app = express();
 
-var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var ipaddress = process.env.OPENSHIFT_NODEJS_IP;
-if (typeof ipaddress === "undefined") {
-            console.warn('No OPENSHIFT_NODEJS_IP var, using 127.0.0.1');
-            ipaddress = "127.0.0.1";
-        };
-app.listen(port, function(err){
-    console.log('running server on port ' + port);
-});
+//var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+//var ipaddress = process.env.OPENSHIFT_NODEJS_IP;
+//if (typeof ipaddress === "undefined") {
+//            console.warn('No OPENSHIFT_NODEJS_IP var, using 127.0.0.1');
+//            ipaddress = "127.0.0.1";
+//        };
+//app.listen(port, function(err){
+//    console.log('running server on port ' + port);
+//});
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
+server.listen(server_port, server_ip_address, function(){
+  console.log("Listening on " + server_ip_address + ", server_port " + server_port)
+});
 /**
  *  Define the sample application.
  */
