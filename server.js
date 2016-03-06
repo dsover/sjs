@@ -18,7 +18,7 @@ app.listen(server_port, server_ip_address, function(){
 
 
 app.createRoutes = function() {
-    var navigation = "";//fs.readFileSync('./src/components/mainNavigation.ejs','utf8')
+    var navigation = fs.readFileSync('./src/components/mainNavigation.ejs','utf8')
     
     app.routes = { };
     
