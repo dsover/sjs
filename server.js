@@ -15,17 +15,22 @@ app.set('view engine','ejs');
 app.listen(server_port, server_ip_address, function(){
   console.log("Listening on " + server_ip_address + ", server_port " + server_port)
 });
-
+//var lor = 
 
 app.createRoutes = function() {
     var navigation = fs.readFileSync(app.get('components')+'/mainNavigation.ejs','utf8');
     
-    
+    var post = { 
+        "_id" : "56dba5eeb0d222c346927d17", 
+        "title" : "title1", 
+        "date" : 1457235438625, 
+        "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>" };
+        
     app.routes = { };
     
     app.routes['/'] = function(req, res) {
     res.setHeader('Content-Type', 'text/html');
-        res.render('index',{ nav : navigation }); 
+        res.render('index',{ nav : navigation,post : post }); 
     };
     
     app.routes['/404'] = function(req, res) {
@@ -45,7 +50,7 @@ app.createRoutes = function() {
   
     app.routes['/blog'] = function(req, res) {
     res.setHeader('Content-Type', 'text/html');
-        res.render('blog-post',{ nav : navigation });
+        res.render('blog-post',{ nav : navigation, post : post });
     };
     
 };
