@@ -73,7 +73,7 @@ app.createRoutes = function() {
 
             // object of all the users
             //console.log(entries);
-            res.render('blog-post',{ nav : navigation, footer : footer, post : entries });
+            res.render('blog-post',{ nav : navigation, footer : footer, post : entries, url : 'http://'+req.host+req.url });
         });
         
     };
