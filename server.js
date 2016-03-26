@@ -38,12 +38,13 @@ app.createRoutes = function() {
     app.routes = { };
     
     app.routes['/'] = function(req, res) {
+        console.log('bob')
     res.setHeader('Content-Type', 'text/html');
         Entry.findOne({}, {}, { sort: { 'created_at' : -1 } }, function(err, entry) {
             if (err) throw err;
-
+                
             // object of all the users
-            //console.log(entry);
+            console.log(entry.title);
             res.render('index',{ nav : navigation, footer : footer, post : entry });
         });
     };
@@ -58,12 +59,18 @@ app.createRoutes = function() {
         res.render('about',{ nav : navigation, footer : footer }); 
     };
    
-    app.routes['/blogs'] = function(req, res) {
-    res.setHeader('Content-Type', 'text/html');
-        Entry.find({}, function(err, entries) {
+    app.routes['/blogs/:page'] = function(req, res) {
+        res.setHeader('Content-Type', 'text/html');
+        page = parseInt(req.params.page)
+        limit = 10;
+        offset = page * limit;
+        Entry.count({}, function( err, count){
             if (err) throw err;
-            res.render('blog-home-1',{ nav : navigation, footer : footer, posts : entries });
-        });
+            Entry.find({}, function(err, entries) {
+                if (err) throw err;
+                res.render('blog-home-1',{ nav : navigation, footer : footer, posts : entries, curPage : page, lastPage : ((count/limit)-1) });
+            }).limit( limit ).skip(offset).sort( '-created_at' );
+        })
     };
   
     app.routes['/blog/:id'] = function(req, res) {
@@ -77,6 +84,11 @@ app.createRoutes = function() {
         });
         
     };
+    app.routes['/portfolio'] = function(req, res) {
+    res.setHeader('Content-Type', 'text/html');
+        res.render('portfolio-1-col',{ nav : navigation, footer : footer }); 
+    };
+    
     
 };
 app.createRoutes();

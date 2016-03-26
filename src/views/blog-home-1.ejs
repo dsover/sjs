@@ -45,7 +45,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Blog Home One
+                <h1 class="page-header"><a href="/blogs/0">Blog Home</a>
                     <small>Subheading</small>
                 </h1>
             </div>
@@ -63,14 +63,14 @@
                     <h2>
                         <a href="/blog/<%=posts[i]._id%> "><%=posts[i].title%></a>
                     </h2>
+                    <%-posts[i].content.substring(0,750)%>
+                    <%if (posts[i].content.length > 750){%>
+                        ...
+                    <%}%>
                     
-                    <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:00 PM</p>
-                    <hr>
+                <p><a class="btn btn-primary" href="/blog/<%=posts[i]._id%>">Read More <i class="fa fa-angle-right"></i></a></p>
+                <p><i class="fa fa-clock-o"></i> Posted on <%=posts[i].created_at%><%=posts[i].created_at.toLocaleString("en-us", { month: "long" })%> <%=posts[i].created_at.getDate()%> <%=posts[i].created_at.getFullYear()%></p>
                     
-                    <hr>
-                    <%-posts[i].content%>
-            
-                    <a class="btn btn-primary" href="/blog/<%=posts[i]._id%>">Read More <i class="fa fa-angle-right"></i></a>
 
                     <hr>
                 
@@ -78,12 +78,16 @@
 
                 <!-- Pager -->
                 <ul class="pager">
+                    <%if(curPage < lastPage){%>
                     <li class="previous">
-                        <a href="#">&larr; Older</a>
+                        <a href="/blogs/<%-(curPage+1)%>">&larr; Older</a>
                     </li>
+                    <%}%>
+                    <%if(curPage > 0){%>
                     <li class="next">
-                        <a href="#">Newer &rarr;</a>
+                        <a href="/blogs/<%-(curPage-1)%>">Newer &rarr;</a>
                     </li>
+                    <%}%>
                 </ul>
 
             </div>
