@@ -38,13 +38,11 @@ app.createRoutes = function() {
     app.routes = { };
     
     app.routes['/'] = function(req, res) {
-        console.log('bob')
     res.setHeader('Content-Type', 'text/html');
         Entry.findOne({}, {}, { sort: { 'created_at' : -1 } }, function(err, entry) {
             if (err) throw err;
                 
             // object of all the users
-            console.log(entry.title);
             res.render('index',{ nav : navigation, footer : footer, post : entry });
         });
     };
@@ -79,7 +77,6 @@ app.createRoutes = function() {
             if (err) throw err;
 
             // object of all the users
-            //console.log(entries);
             res.render('blog-post',{ nav : navigation, footer : footer, post : entries, url : 'http://'+req.host+req.url });
         });
         
