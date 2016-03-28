@@ -71,7 +71,13 @@
                         <h4><a href="blog/<%=post._id%>"><i class="fa fa-fw fa-archive"></i><%=post.title%></a></h4>
                     </div>
                     <div class="panel-body">
-                        <%-post.content%>
+                        <%-post.content.substring(0,750)%>
+                        <%if (post.content.length > 750){%>
+                            ...
+                        <p><a class="btn btn-default" href="/blog/<%=post._id%>">Read More <i class="fa fa-angle-right"></i></a></p>
+                        <%}%>
+                        
+                         
                     </div>
                 </div>
             </div>
