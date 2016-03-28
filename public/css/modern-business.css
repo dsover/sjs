@@ -97,7 +97,7 @@ footer {
 div#wrapperHeader {
  width:100%;
  height:auto; /* height of the background image? */
- background:url(images/header.png) repeat-x 0 0;
+/* background:url(images/header.png) repeat-x 0 0;*/
  text-align:center;
 }
 
