@@ -8,9 +8,19 @@
 
 html,
 body {
+  background: url(../images/bg1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+/*
+    
     height: 100%;
     width:100%;
-     background-image:url('../images/bg3.jpg');
+        background-repeat: no-repeat;
+
+     background-image:url('../images/bg1.jpg');
+*/
 }
 
 body {
