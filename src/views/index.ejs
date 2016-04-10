@@ -34,15 +34,15 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-           <%- nav %>
+            <%- nav %>
         </div>
         <!-- /.container -->
     </nav>
     <!-- Header Image-->
     <div id="wrapperHeader">
         <div id="header">
-                 <img src="/images/header.jpg" alt="logo" />
-        </div> 
+            <img src="/images/header.jpg" alt="logo" />
+        </div>
     </div>
     <!-- Page Content -->
     <div class="container">
@@ -51,34 +51,37 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-<!--                    Welcome to Modern Business-->
                 </h1>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-beer"></i> Works</h4>
+                        <h4><a href="/books"><i class="fa fa-fw fa-book"></i> Books</a></h4>
                     </div>
                     <div class="panel-body">
-                        <img width="100%" src="/images/coming_soon.jpg" alt="coming soon"/>
-                        <p></p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                        <a href="/books">
+                            <img class="img-responsive img-hover" src="/images/coming_soon.jpg" alt="">
+                        </a>
+                        <p><h3>THE KEY OF ARGOS</h3>
+                            <h4>Adult Epic Fantasy</h4>
+                            Ronan Agnatha raises a rebellion to seize her rightful throne and avenge the slaughter of her family by the cruel and corrupt Magistratum. In her ...</p>
+                        <a href="/books" class="btn btn-default">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><a href="blog/<%=post._id%>"><i class="fa fa-fw fa-book"></i><%=post.title%></a></h4>
+                        <h4><a href="/blogs/0"><i class="fa fa-fw fa-newspaper-o"></i> Blog</a></h4>
                     </div>
                     <div class="panel-body">
+                        <h3><a href="blog/<%=post._id%>"> <%=post.title%></a></h3>
+                        <br>
                         <%-post.content.substring(0,750)%>
-                        <%if (post.content.length > 750){%>
-                            ...
-                        <p><a class="btn btn-default" href="/blog/<%=post._id%>">Read More <i class="fa fa-angle-right"></i></a></p>
-                        <%}%>
-                        
-                         
+                            <%if (post.content.length > 750){%>
+                                ...
+                                <p><a class="btn btn-default" href="/blog/<%=post._id%>">Read More <i class="fa fa-angle-right"></i></a></p>
+                                <%}%>
                     </div>
                 </div>
             </div>
@@ -94,112 +97,28 @@
             </div>
         </div>
         <!-- /.row -->
-
-        <!-- Portfolio Section -->
-<!--
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Portfolio Heading</h2>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-        </div>
--->
-        <!-- /.row -->
-
-        <!-- Features Section -->
-<!--
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Modern Business Features</h2>
-            </div>
-            <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
-                <ul>
-                    <li><strong>Bootstrap v3.2.0</strong>
-                    </li>
-                    <li>jQuery v1.11.0</li>
-                    <li>Font Awesome v4.1.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
-            </div>
-        </div>
--->
-        <!-- /.row -->
-
         <hr>
-
-        <!-- Call to Action Section -->
-<!--
-        <div class="well">
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
-                </div>
-            </div>
-        </div>
-
-        <hr>
--->
-
         <!-- Footer -->
         <footer>
             <%- footer %>
         </footer>
-
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- include sign up modal from components folder    -->
+    <%-subscribeModal%>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- jQuery -->
+        <script src="/js/jquery.js"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-//    $('.carousel').carousel({
-//        interval: 5000 //changes the speed
-//    })
-    </script>
-    <script src="js/twitter.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="/js/bootstrap.min.js"></script>
+
+        <script src="/js/subscribe.js"></script>
+
+        <script src="/js/twitter.js"></script>
+    
+        <script src="/js/googleAnlytics.js"></script>
 </body>
 
 </html>

@@ -4,16 +4,17 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
 /* Global Styles */
 
 html,
 body {
-  background: url(../images/bg1-1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-/*
+    background: url(../images/bg1-1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*
     
     height: 100%;
     width:100%;
@@ -24,7 +25,8 @@ body {
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 50px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .img-portfolio {
@@ -34,6 +36,7 @@ body {
 .img-hover:hover {
     opacity: 0.8;
 }
+
 
 /* Home Page Carousel */
 
@@ -54,11 +57,13 @@ header.carousel .fill {
     background-size: cover;
 }
 
+
 /* 404 Page Styles */
 
 .error-404 {
     font-size: 100px;
 }
+
 
 /* Pricing Page Styles */
 
@@ -79,11 +84,13 @@ header.carousel .fill {
     font-style: italic;
 }
 
+
 /* Footer Styles */
 
 footer {
     margin: 50px 0;
 }
+
 
 /* Responsive Styles */
 
@@ -98,27 +105,33 @@ footer {
     .img-portfolio {
         margin-bottom: 15px;
     }
-
     header.carousel .carousel {
         height: 70%;
     }
 }
 
 div#wrapperHeader {
- width:100%;
- height:auto; /* height of the background image? */
-/* background:url(images/header.png) repeat-x 0 0;*/
- text-align:center;
+    width: 100%;
+    height: auto;
+    /* height of the background image? */
+    /* background:url(images/header.png) repeat-x 0 0;*/
+    text-align: center;
 }
 
 div#wrapperHeader div#header {
- width:100%;
- height:auto;
- margin:0 auto;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 div#wrapperHeader div#header img {
- width:100%; /* the width of the logo image */
- height:auto; /* the height of the logo image */
-/* margin:0 auto;*/
+    width: 100%;
+    /* the width of the logo image */
+    height: auto;
+    /* the height of the logo image */
+    /* margin:0 auto;*/
+}
+
+.noShow {
+    display: none;
 }
