@@ -132,12 +132,14 @@ app.createRoutes = function () {
         var success = true;
         if (!emailValidator.validate(req.query.email_input)) {
             success = false;
+            console.log("/subscription/signup invalid email "+ req.query.email_input);
         } else {
             Subscriber.find({
                 email: req.query.email_input
             }, function (err, subscriptions) {
                 if (err) {
                     success = false;
+                    console.log('/subscription/signup' + err);
                 }
                 if (subscriptions.length < 1) {
                     var newSubscription = new Subscriber({
@@ -147,6 +149,7 @@ app.createRoutes = function () {
                     });
                     newSubscription.save(function (err) {
                         if (err) {
+                            console.log('/subscription/signup' + err)
                             success = false;
                         }
                     });
@@ -175,9 +178,9 @@ app.createRoutes = function () {
             // send mail with defined transport object 
             transporter.sendMail(mailOptions, function (error, info) {
                 if (error) {
-                    return console.log(error);
+                    return console.log('/subscription/signup' + error);
                 }
-                console.log('Message sent: ' + info.response);
+                console.log('/subscription/signup Message sent: ' + info.response);
             });
         }
         console.log("subscription saved?: " + success + "name:" + req.query.name_input + "email:" + req.query.email_input)
@@ -190,6 +193,7 @@ app.createRoutes = function () {
         var success = true;
         if (!emailValidator.validate(req.query.email_input)) {
             success = false;
+            console.log("/subscription/unsubscribe invalid email "+ req.query.email_input);
             res.json({
                 success: success
             });
@@ -199,9 +203,11 @@ app.createRoutes = function () {
             }, function (err, subscriptions) {
                 if (err) {
                     success = false;
+                    console.log('/subscription/unsubscribe' + err);
                 }
                 if (subscriptions.length < 1) {
                     success = false;
+                    console.log('/subscription/unsubscribe no matches')
                     res.json({
                         success: success
                     })
@@ -227,9 +233,9 @@ app.createRoutes = function () {
                     // send mail with defined transport object 
                     transporter.sendMail(mailOptions, function (error, info) {
                         if (error) {
-                            return console.log(error);
+                            return console.log('/subscription/unsubscribe' + error);
                         }
-                        console.log('Message sent: ' + info.response);
+                        console.log('/subscription/unsubscribe Message sent: ' + info.response);
                     });
                 }
                 console.log("subscription unsubscribed?: " + success + "email:" + req.query.email_input)
