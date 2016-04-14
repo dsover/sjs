@@ -20,6 +20,9 @@ subcriberSchema.pre('save', function (next) {
     if (!this.created_at) {
         this.created_at = currentDate;
     }
+    
+    //make email lowercase
+    this.email = this.email.toLowerCase()
     next();
 });
 // the schema is useless so far
