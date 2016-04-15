@@ -13,9 +13,6 @@ module.exports = function (app, extras) {
         if (!emailValidator.validate(subscriberEmailAddress)) {
             success = false;
             console.log("/subscription/unsubscribe invalid email "+ subscriberEmailAddress);
-            res.json({
-                success: success
-            });
         } else {
             extras.Subscriber.find({
                 email: subscriberEmailAddress
@@ -23,16 +20,10 @@ module.exports = function (app, extras) {
                 if (err) {
                     success = false;
                     console.log('/subscription/unsubscribe' + err);
-                    res.json({
-                        success: success
-                    });
                 }
                 if (subscriptions.length < 1) {
                     success = false;
                     console.log('/subscription/unsubscribe no matches')
-                    res.json({
-                        success: success
-                    })
                 }
                 subscriptions.forEach(function(sub){
                     sub.active=false;

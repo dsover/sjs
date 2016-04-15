@@ -11,9 +11,6 @@ module.exports = function (app, extras) {
         if (!emailValidator.validate(subscriberEmailAddress)) {
             success = false;
             console.log("/subscription/signup invalid email "+ subscriberEmailAddress);
-            res.json({
-                success: success
-            });
         } else {
             extras.Subscriber.find({
                 email: subscriberEmailAddress
@@ -21,9 +18,6 @@ module.exports = function (app, extras) {
                 if (err) {
                     success = false;
                     console.log('/subscription/signup' + err);
-                    res.json({
-                        success: success
-                    });
                 }
                 if (subscriptions.length < 1) {
                     var newSubscription = new extras.Subscriber({
@@ -35,9 +29,6 @@ module.exports = function (app, extras) {
                         if (err) {
                             console.log('/subscription/signup' + err)
                             success = false;
-                            res.json({
-                                success: success
-                            });
                         }
                     });
                 }else{
@@ -70,9 +61,9 @@ module.exports = function (app, extras) {
                 console.log('/subscription/signup Message sent: ' + info.response);
             });
         }
-        console.log("subscription saved?: " + success + "name:" + req.query.name_input + "email:" + subscriberEmailAddress)
+        console.log("subscription saved?: " + success + "name: " + req.query.name_input + "email: " + subscriberEmailAddress)
         res.json({
-            success: true
+            success: success
         });
     });
 }
