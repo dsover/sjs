@@ -52,7 +52,7 @@ Entry.findOne({}, {}, {
             var x = subscribers[i];
             var mailOptions = {
                 from: "SarahJSover.com <sjsover@gmail.com>" // sender address
-                , to: "Alex Sover <alexsover@gmail.com>" //x.email // comma separated list of receivers
+                , to: x.email // comma separated list of receivers
                 , subject: "New Blog From Sarah J Sover:  " + title // Subject line
                 , html: ejs.render(goodByEmail, {
                         title: title
@@ -77,8 +77,3 @@ Entry.findOne({}, {}, {
         db.disconnect();
     });
 });
-var bunyan = require('bunyan');
-var log = bunyan.createLogger({
-    name: "myapp"
-});
-log.info("hi");
