@@ -43,7 +43,7 @@ module.exports = function (app, extras) {
             var welcomeEmail = fs.readFileSync(app.get('components') + '/welcomeEmail.ejs', 'utf8');
             var nodemailer = require('nodemailer');
             // create reusable transporter object using the default SMTP transport 
-            var transporter = nodemailer.createTransport('smtps://sjsover%40gmail.com:Dr3amer2@smtp.gmail.com');
+            var transporter = nodemailer.createTransport('smtps://'+process.env.EMAIL_ACCOUNT+'%40gmail.com:'+process.env.EMAIL_PASS+'@smtp.gmail.com');
             // setup e-mail data with unicode symbols 
             var mailOptions = {
                 from: "SarahJSover.com <sjsover@gmail.com>", // sender address
