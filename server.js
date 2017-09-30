@@ -11,14 +11,13 @@ var ejs = require('ejs');
 var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
-var connection_string = '127.0.0.1:27017/blog';
-if (process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
-    connection_string = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
-        process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
-        process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
-        process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
-        process.env.OPENSHIFT_APP_NAME;
-}
+var connection_string = 'ds155424.mlab.com:55424/sjsnodejs';
+
+    connection_string = process.env.MONGODB_DB_USERNAME + ":" +
+        process.env.MONGODB_DB_PASSWORD + "@" +
+        'ds155424.mlab.com' + ':' +
+        '55424' + '/' +
+        'sjsnodejs';
 mongoose.connect(connection_string); //('mongodb://'+server_ip_address+'/blog');
 
 
