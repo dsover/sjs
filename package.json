@@ -1,31 +1,26 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "sjs",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "Author site",
   "keywords": [
-    "OpenShift",
     "Node.js",
-    "application",
-    "openshift"
+    "application"
   ],
   "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
+    "name": "Alex Sover"
   },
-  "homepage": "http://www.openshift.com/",
+  "homepage": "N/A",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
+    "url": "https://github.com/dsover/sjs"
   },
   "engines": {
-    "node": ">= 0.6.0",
-    "npm": ">= 1.0.0"
+    "node": "9.3.0",
+    "npm": "5.8.0"
   },
   "dependencies": {
     "body-parser": "^1.15.0",
     "ejs": "^2.4.1",
-    "email-validator": "^1.0.4",
     "express": "~3.4.4"
   },
   "devDependencies": {},
