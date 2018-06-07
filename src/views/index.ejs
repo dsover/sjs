@@ -9,10 +9,11 @@
     <meta name="description" content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers.">
     <meta name="author" content="Studio SJS">
     <meta property="og:image" content="http://www.sarahjsover.com/images/theBox.jpg">
-    <meta property="og:url" content="http://www.sarahjsover.com"/>
-    <meta property="og:site_name" content="Sarah J Sover"/>
-    <meta property="og:title" content="Website of author Sarah J. Sover"/>
-    <meta property="og:description" content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."/>
+    <meta property="og:url" content="http://www.sarahjsover.com" />
+    <meta property="og:site_name" content="Sarah J Sover" />
+    <meta property="og:title" content="Website of author Sarah J. Sover" />
+    <meta property="og:description" content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
     <link rel="image_src" type="image/jpeg" href="http://www.sarahjsover.com/images/theBox.jpg" />
 
     <title>Sarah J Sover</title>
@@ -59,42 +60,47 @@
                 <h1 class="page-header">
                 </h1>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><a href="/books"><i class="fa fa-fw fa-book"></i> Books</a></h4>
+                        <h4>
+                            <a href="/books">
+                                <i class="fa fa-fw fa-book"></i> Books</a>
+                        </h4>
                     </div>
                     <div class="panel-body">
                         <a href="/books">
                             <img class="img-responsive img-hover" src="/images/ThreeTrolls.jpg" alt="">
                         </a>
-                        <p><h3>DOUBLE-CROSSING THE BRIDGE: A TROLL HEIST</h3>
+                        <p>
+                            <h3>DOUBLE-CROSSING THE BRIDGE: A TROLL HEIST</h3>
                             <h4>Adult Satirical Fantasy</h4>
-                            Three trolls walk into a bar … And plan the heist of the century. University didn’t prepare Granu to survive troll puberty, and when her students turn on her, she’s nearly turned into a troll filet...</p>
+                            Three trolls walk into a bar … And plan the heist of the century. University didn’t prepare Granu to survive troll puberty,
+                            and when her students turn on her, she’s nearly turned into a troll filet...</p>
                         <a href="/books" class="btn btn-default">Read More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><a href="/blogs/0"><i class="fa fa-fw fa-newspaper-o"></i> Blog</a></h4>
+                        <h4>
+                            <a href="/blogs/0">
+                                <i class="fa fa-fw fa-newspaper-o"></i> Blog</a>
+                        </h4>
                     </div>
                     <div class="panel-body">
-                        <h3><a href="blog/<%=post._id%>"> <%=post.title%></a></h3>
+                        <h3></h3>
                         <br>
-                        <%-post.content.substring(0,750)%>
-                            <%if (post.content.length > 750){%>
-                                ...
-                                <p><a class="btn btn-default" href="/blog/<%=post._id%>">Read More <i class="fa fa-angle-right"></i></a></p>
-                                <%}%>
+
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
+            </div> -->
+            <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-twitter-square"></i> Twitter </h4>
+                        <h4>
+                            <i class="fa fa-fw fa-twitter-square"></i> Twitter </h4>
                     </div>
                     <div class="panel-body">
                         <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/SarahJSover" data-widget-id="706095586190233600"></a>
@@ -112,19 +118,18 @@
     <!-- /.container -->
 
     <!-- include sign up modal from components folder    -->
-    <%-subscribeModal%>
 
-        <!-- jQuery -->
-        <script src="/js/jquery.js"></script>
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
 
-        <script src="/js/subscribe.js"></script>
+    <script src="/js/subscribe.js"></script>
 
-        <script src="/js/twitter.js"></script>
-    
-        <script src="/js/googleAnlytics.js"></script>
+    <script src="/js/twitter.js"></script>
+
+    <script src="/js/googleAnlytics.js"></script>
 </body>
 
 </html>

@@ -26,9 +26,7 @@
     "body-parser": "^1.15.0",
     "ejs": "^2.4.1",
     "email-validator": "^1.0.4",
-    "express": "~3.4.4",
-    "mongoose": "^4.4.6",
-    "nodemailer": "^0.7.1"
+    "express": "~3.4.4"
   },
   "devDependencies": {},
   "bundleDependencies": [],
