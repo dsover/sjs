@@ -6,7 +6,7 @@ var fs = require('fs');
 var app = express();
 var ejs = require('ejs');
 
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 app.use(express.static('public'));
