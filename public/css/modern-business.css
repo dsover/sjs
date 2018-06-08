@@ -86,6 +86,13 @@ footer {
   margin: 50px 0;
 }
 
+@media (min-width: 1200px) {
+    .container{
+        width: 75%;
+        
+    }
+}
+
 /* Responsive Styles */
 
 @media (max-width: 991px) {
