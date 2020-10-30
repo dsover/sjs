@@ -1,3 +1,5 @@
 ._ignore
 node_modules
 .vscode
+err.log
+out.log
