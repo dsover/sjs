@@ -3,3 +3,5 @@ node_modules
 .vscode
 err.log
 out.log
+**.DS_Store**
+.idea
