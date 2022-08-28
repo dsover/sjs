@@ -5,3 +5,4 @@ err.log
 out.log
 **.DS_Store**
 .idea
+.idea/misc.xml
