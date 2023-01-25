@@ -119,13 +119,12 @@
                         </h3>
                     </div>
                     <div class="panel-body" style="margin-top: 20px; margin-bottom: 160px;">
-                        <b>October 8<sup>th</sup> 2022 Monsterama Jr.</b><br>
-                        Virtual Programing<br>
-                        <a href="https://monsteramacon.com/product/2022-monsterama-jr/">https://monsteramacon.com/product/2022-monsterama-jr/</a>
-                        <hr>
-                        <b>October 14<sup>th</sup> - 16<sup>th</sup> 2022 Multiverse Con</b><br>
-                        Guest<br>
-                        <a href="https://www.multiversecon.org/">https://www.multiversecon.org</a>
+                        <% for (var i = 0; i < dates.length;  i++ ) { %>
+                            <b><%- dates[i].date%><sup><%- dates[i].sup%></sup> <%- dates[i].eventName%></b><br>
+                            <%- dates[i].type%><br>
+                            <a href="<%- dates[i].link%>"><%- dates[i].link%></a>
+                            <hr>
+                        <% } %>
                     </div>
                 </div>
 

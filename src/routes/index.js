@@ -1,7 +1,7 @@
-var fs = require('fs')
-var validFileTypes = ['js'];
+const fs = require('fs');
+const validFileTypes = ['js'];
 
-var requireFiles = function (directory, app, extras) {
+const requireFiles = function (directory, app, extras) {
     fs.readdirSync(directory).forEach(function (fileName) {
         // Recurse if directory
         if (fs.lstatSync(directory + '/' + fileName).isDirectory()) {
@@ -18,7 +18,7 @@ var requireFiles = function (directory, app, extras) {
             require(directory + '/' + fileName)(app, extras);
         }
     })
-}
+};
 
 module.exports = function (app, extras) {
     requireFiles(__dirname, app, extras);
