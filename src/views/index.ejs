@@ -189,20 +189,14 @@
                         </h3>
                     </div>
                     <div class="panel-body" style="margin-top: 20px; margin-bottom: 60px;">
-                        <a href="https://linktr.ee/SarahJ.Sover" target="_blank">Linktree</a>
-                        <hr>
-                        Writer's Digest: <a href="https://www.writersdigest.com/online-editor/why-writers-should-embrace-their-weird-side" target="_blank">Why Writers Should Embrace Their Weird Side</a>
-                        <hr>
-                        Women Writers, Women's Books: <a href="http://booksbywomen.org/writing-like-raising-the-dead-by-sarah-j-sover/" target="_blank">Writing Like Raising The Dead</a>
-                        <hr>
-                        <a href="http://www.blog.halon-chronicles.com/winterview-author-sarah-j-sover/" target="_blank">Winterview with K.J. Harrowick</a><br><br>
-                        <a href="https://aquietpint.com/2022/03/10/a-story-is-born-sarah-sover/?fbclid=IwAR26y03qiv-CBFp4WZseRvS8C4U5gPy-9MPqVhZijFXnY2T1ASNhXbEX3oU" target="_blank">A Quite Pint: interview with Bishop O'Connell</a><br><br>
-                        <a href="http://voyageatl.com/interview/meet-sarah-sover-sarah-j-sover-johns-creek/" target="_blank">Interview in VoyageATL</a><br><br>
-                        <a href="https://shoutoutatlanta.com/meet-sarah-j-sover-fantasy-author/" target="_blank">Interview in Shoutout Atlanta</a><br><br>
-                        <hr>
+                        <% for (var i = 0; i < links.length;  i++ ) { %>
+                            <a href="<%- links[i].link%>" target="_blank"><%- links[i].title%></a>
+                            <hr>
+                        <% } %>
                         <h3>Virtual Panels</h3>
-                        <b>WriteHive</b> 2021 Annual Conference  <a href="https://www.youtube.com/playlist?list=PLcHVB0j49eIgMOAAxaMvZwQpBpHwxZQih">watch here</a><br>
-                        <b>Monsterama</b> 2020 may be over, but you can still catch all the virtual panels!  available <a href="https://info869189.wixsite.com/virtualmonsterama/program">here</a><br>
+                            <% for (var i = 0; i < panels.length;  i++ ) { %>
+                                <b><%- panels[i].event%></b> <%- panels[i].info%>  <a href="<%- panels[i].links%>"><%- panels[i].linkText%></a><br>
+                            <% } %>
                     </div>
                 </div>
             </div>
