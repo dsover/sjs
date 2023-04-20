@@ -118,11 +118,11 @@
                             <i class="fa fa-fw fa-globe"></i> Upcoming Appearances
                         </h3>
                     </div>
-                    <div class="panel-body" style="margin-top: 20px; margin-bottom: 160px;">
+                    <div class="panel-body" style="margin-top: 20px; margin-bottom: 10px;">
                         <% for (var i = 0; i < dates.length;  i++ ) { %>
                             <b><%- dates[i].date%><sup><%- dates[i].sup%></sup> <%- dates[i].eventName%></b><br>
                             <%- dates[i].type%><br>
-                            <a href="<%- dates[i].link%>"><%- dates[i].link%></a>
+                            <a href="<%- dates[i].link%>" target="_blank"><%- dates[i].link%></a>
                             <hr>
                         <% } %>
                     </div>
