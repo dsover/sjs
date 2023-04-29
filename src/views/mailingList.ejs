@@ -1,121 +1,145 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
-    />
-    <meta name="author" content="Studio SJS" />
+<head>
+    <meta charset="UTF-8">
+    <title>Sarah J. Sover | Mailing List</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <!-- SEO tags -->
+    <meta name="description"
+          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers.">
+    <meta name="author" content="Studio SJS">
     <meta property="og:image" content="http://www.sarahjsover.com/images/DCTB_3.png">
-    <meta property="og:url" content="http://www.sarahjsover.com" />
-    <meta property="og:site_name" content="Sarah J Sover" />
-    <meta property="og:title" content="Website of author Sarah J. Sover" />
-    <meta property="og:description" content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."/>
-    <title>Sarah J Sover - Mailing list</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/title.png" />
-    <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link href="/css/modern-business.css" rel="stylesheet" />
-    <!-- Custom Fonts -->
-    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta property="og:url" content="http://www.sarahjsover.com"/>
+    <meta property="og:site_name" content="Sarah J Sover"/>
+    <meta property="og:title" content="Website of author Sarah J. Sover"/>
+    <meta property="og:description"
+          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."/>
+    <!-- includes -->
+    <script src="/js/jquery_3_2_1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="/css/montserrat.css">
+    <link rel="stylesheet" media="screen" href="/css/style.css"/>
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-  </head>
-
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <%- nav %>
-      </div>
-      <!-- /.container -->
-    </nav>
-    <!-- Page Content -->
-    <div class="container">
-      <!-- Page Heading/Breadcrumbs -->
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="page-header">Mailing List</h1>
-          <ol class="breadcrumb">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li class="active">Mailing List</li>
-          </ol>
-        </div>
-      </div>
-      <!-- /.row -->
-      <!-- Intro Content -->
-      <div class="row">
-        <div class="col-md-6">
-          <img class="img-responsive" width="75%" src="images/mailListImage.png" alt="" />
-        </div>
-        <div class="col-md-6">
-          <hr />
-          <p>
-           <!-- Begin Mailchimp Signup Form -->
-            <div id="mc_embed_signup">
-              <form action="https://SarahJSover.us20.list-manage.com/subscribe/post?u=d140b1f858977733bdf365b73&amp;id=a731a307ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-	                <h2>For updates and news, sign up for my mailing list!</h2>
-                  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                    <div class="mc-field-group">
-	                    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                      </label>
-	                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                    </div>
-                    <div class="mc-field-group">
-	                    <label for="mce-FNAME">First Name  <span class="asterisk">*</span>
-                      </label>
-	                    <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
-                    </div>
-                    <div class="mc-field-group">
-                      <label for="mce-LNAME">Last Name </label>
-                      <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                    </div>
-                      <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d140b1f858977733bdf365b73_a731a307ee" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Signup" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</head>
+<body>
+<%- include("./components/header.ejs", { page_name: "mailing_list", page_url:'/'}); %>
+<main id="newsletter">
+    <section class="about" id="newsletter">
+        <div class="card-two"><h1>SUBSCRIBE TO NEWSLETTER</h1>
+            <div class="cardtext">
+                <!-- Begin Mailchimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="https://SarahJSover.us20.list-manage.com/subscribe/post?u=d140b1f858977733bdf365b73&amp;id=a731a307ee"
+                          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                          class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <h2>For updates and news, sign up for my mailing list!</h2>
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-FNAME">First Name <span class="asterisk">*</span>
+                                </label>
+                                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-LNAME">Last Name </label>
+                                <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                                      name="b_d140b1f858977733bdf365b73_a731a307ee"
+                                                                                                      tabindex="-1"
+                                                                                                      value=""></div>
+                            <div class="clear"><input type="submit" value="Signup" name="subscribe"
+                                                      id="mc-embedded-subscribe" class="button"></div>
                         </div>
-                </form>
-              </div>
-              <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-            <!--End mc_embed_signup-->
-          </p>
-          <hr />
+                    </form>
+                </div>
+                <script type='text/javascript'
+                        src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script type='text/javascript'>(function ($) {
+                        window.fnames = new Array();
+                        window.ftypes = new Array();
+                        fnames[0] = 'EMAIL';
+                        ftypes[0] = 'email';
+                        fnames[1] = 'FNAME';
+                        ftypes[1] = 'text';
+                        fnames[2] = 'LNAME';
+                        ftypes[2] = 'text';
+                    }(jQuery));
+                    var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
+                <p>Your data is safe. Neither Sarah J. Sover nor her team share or sell this list to third parties. To
+                    learn more, visit the privacy policy.</p>
+            </div>
         </div>
-      </div>
-      <!-- /.row -->
-      <hr />
-      <!-- Footer -->
-      <footer>
-        <%- footer %>
-      </footer>
-    </div>
-    <!-- /.container -->
-    <!-- include sign up modal from components folder    -->
+        </div>
+        <div class="card-one">
+            <h1>HANG OUT WITH SARAH</h1>
+            <div class="cardtext">
+                <div id="social-platforms">
+                    <a class="btn btn-icon btn-twitter" href="https://twitter.com/SarahJSover" target="_blank"><i
+                                class="fa fa-twitter"></i><span>Twitter</span></a>
+                    <a class="btn btn-icon btn-facebook" href="https://www.facebook.com/SarahJSover" target="_blank"><i
+                                class="fa fa-facebook"></i><span>Facebook</span></a>
 
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/googleAnlytics.js"></script>
-  </body>
+                    <a class="btn btn-icon btn-instagram" href="https://www.instagram.com/sarahjsover/" target="_blank"><i
+                                class="fa fa-instagram"></i><span>Instagram</span></a>
+                    <a class="btn btn-icon btn-goodreads"
+                       href="https://www.goodreads.com/author/show/18168726.Sarah_J_Sover"><i
+                                class="fa-brands fa-goodreads"></i><span>Goodreads</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="linktree" id="linktree" name="linktree">
+        <h1 class="h2">Sarah's Linktree</h1>
+        <div class="card">
+            <h1>BOOKS</h1>
+            <div class="cardtext">
+                <button><a href="https://www.amazon.com/Fairy-Godmurder-Fractured-Fae-Book-ebook/dp/B09S15M55N/"
+                           target="_blank">FAIRY GODMURDER on Amazon</a></button>
+                <button class="full"><a
+                            href="https://www.amazon.com/Eagle-Eye-Sammy-Fractured-Short-Story-ebook/dp/B0BJRW6P8/"
+                            target="_blank">EAGLE-EYE SAMMY on Amazon</a></button>
+                <button class="full"><a href="https://www.amazon.com/dp/B0BBS78X5V/" target="_blank">DOUBLE-CROSSING THE
+                        BRIDGE on Amazon</a></button>
+                <button class="full"><a
+                            href="https://www.amazon.com/Putting-Fact-Fantasy-Authenticity-Writing-ebook/dp/B09BTRLC2N/"
+                            target="_blank">PUTTING THE FACT IN FANTASY on Amazon</a></button>
+            </div>
+        </div>
+        <div class="card">
+            <h1>SOCIAL</h1>
+            <div class="cardtext">
+                <button><a href="https://twitter.com/SarahJSover" target="_blank">Twitter</a></button>
+                <button><a href="https://www.facebook.com/SJSover" target="_blank">Facebook</a></button>
+                <button><a href="https://www.instagram.com/SarahJSover/" target="_blank">Instagram</a></button>
+                <button><a href="https://www.tiktok.com/@sarahjsover" target="_blank">TikTok</a></button>
+            </div>
+        </div>
+        <div class="card">
+            <h1>OTHER</h1>
+            <div class="cardtext">
+                <button><a href="#newsletter">MAILING LIST</a></button>
+                <button><a href="https://www.read-it-again.com/sarah-j-sovers-author-page" target="_blank">Read It Again
+                        BooksS<br/>Sarah's OFFICIAL Indie Bookstore</a></button>
+                <button><a href="https://www.redbubble.com/people/SJSover/shop?asc=u" target="_blank">Sarah's Redbubble
+                        Shop</a></button>
+            </div>
+        </div>
+    </section>
+</main>
+<%- include("./components/footer.ejs"); %>
+</body>
 </html>
+<footer>
+    <script type="text/javascript" src="/js/script.js"></script>
+</footer>

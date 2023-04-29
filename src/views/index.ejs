@@ -1,227 +1,103 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Sarah J. Sover | Not for Everyone</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <!-- SEO tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers.">
+    <meta name="description"
+          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers.">
     <meta name="author" content="Studio SJS">
     <meta property="og:image" content="http://www.sarahjsover.com/images/DCTB_3.png">
-    <meta property="og:url" content="http://www.sarahjsover.com" />
-    <meta property="og:site_name" content="Sarah J Sover" />
-    <meta property="og:title" content="Website of author Sarah J. Sover" />
-    <meta property="og:description" content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."/>
-
-    <title>Sarah J Sover</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/title.png" />
-    <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="/css/modern-business.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"d140b1f858977733bdf365b73","lid":"a731a307ee","uniqueMethods":true}) })</script>
+    <meta property="og:url" content="http://www.sarahjsover.com"/>
+    <meta property="og:site_name" content="Sarah J Sover"/>
+    <meta property="og:title" content="Website of author Sarah J. Sover"/>
+    <meta property="og:description"
+          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."/>
+    <!-- includes -->
+    <script src="/js/jquery_3_2_1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="/css/montserrat.css">
+    <link rel="stylesheet" media="screen" href="/css/style.css"/>
 </head>
-
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <%- nav %>
-        </div>
-        <!-- /.container -->
-    </nav>
-    <!-- Header Image-->
-    <div id="wrapperHeader">
-        <div id="header">
-            <img src="/images/header.png" alt="logo" />
-        </div>
-    </div>
-    <!-- Page Content -->
-    <div class="container">
-        <!-- Marketing Icons Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                </h1>
-                <br>
+<%- include("./components/header.ejs", { page_name: "home", page_url:'/'}); %>
+<main id="home">
+    <section class="noir">
+        <div class="card">
+            <h1>BOOKS</h1>
+            <div class="cardtext">
+                <img src="/images/FGM.jpg" alt="Fairy Godmurder" title="Fairy Godmurder" border="0" width="100%"/>
+                <h3>Fairy Godmurder</h3>
+                <p>A fairy godmother with a vendetta and a killer pair of docs hunts down the bastard who slaughtered
+                    her first princess.</p>
+                <button><a href="<?php echo $path;?>books/fairygodmurder.php">Learn More</a></button>
             </div>
         </div>
-        <div class="row">
-            <div class="panel panel-default" style="background-color: #f5f5f5; border-color: #ddd;" role="alert">
-                <div class="panel-body">
-                        <p>
-                            Welcome to my little slice of the internet! I'm a writer of fantasy novels that cross genre boundaries in various ways, frequently
-                            with a comedic flair. I love playing with threads of connection and juxtaposing serious elements
-                            with absurd or unexpected ones. My ultimate goal is to create a tiny bright spot in somebody's
-                            world!
-                        </p>
-                        <p>
-                            Purchase signed copies of <i>Fairy Godmurder</i> or <i>Double-Crossing the Bridge</i> from Read It Again Books <a href="https://www.read-it-again.com/sarah-j-sovers-author-page" target="_blank"><img src="/images/RIA.png"></a>
-                        </p>
+        <div class="card"><h1>ARTICLES</h1>
+            <div class="cardtext">
+                <img src="/images/writersdigest2023.jpg" alt="Writer's Digest" title="Writer's Digest" border="0"
+                     width="100%"/>
+                <h3>Get Cozy With Sarah</h3>
+                <p>Read Sarah's latest articles in <em>Writer's Digest</em> magazine and Dan Koboldt's <em>Science in
+                        SF, Fact in Fantasy</em> series.</p>
+                <button><a href="<?php echo $path;?>articles">Read More</a></button>
+            </div>
+        </div>
+        <div class="card"><h1>ART SHOP</h1>
+            <div class="cardtext">
+                <img src="images/precioustime.jpg" alt="Precious Time" title="Precious Time" border="0" width="100%"/>
+                <h3>Naughty Squids & Flirty Trolls</h3>
+                <p>Drop into Sarah's shop and check out her latest artwork on your favorite everyday items.</p>
+                <button><a href="<?php echo $path;?>shop">Visit Shop</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="cons">
+        <h1>CONVENTIONS</h1>
+        <div class="polaroids">
+            <div class="card-container">
+                <div class="cardz"
+                     style="--image: url('/images/con_carolinas_2022.jpg'); --angle: -5deg; --x: 5%; --y: 15%; --caption: 'ConCarolinas, 2022'"></div>
+                <div class="cardz"
+                     style="--image: url('/images/the_annual_writers_digest_conference2019.jpg'); --angle: -1deg; --x: -10%; --y: -20%; --caption: 'The Annual Writers Digest Conference, 2019'"></div>
+                <div class="cardz"
+                     style="--image: url('/images/atl_comic_con_2023.jpg'); --angle: -4deg; --x: -20%; --y: 5%; --caption: 'Atlanta ComicCon, 2023'"></div>
+                <div class="cardz"
+                     style="--image: url('/images/jordan_con_2021.jpg'); --angle: 7deg; --x: 10%; --y: -7%; --caption: 'JordanCon, 2021'"></div>
+            </div>
+            <div class="text-container">
+                <div class="textconwrap">
+                    <h3>COME VISIT ME</h3>
+                    <p><h4>JordanCon</h4>
+                    <em>Guest</em><br/>
+                    April 21-23, 2023<br/>
+                    Atlanta, GA<br/>
+                    <a href="https://www.jordancon.org" target="_blank" class="textlink">www.jordancon.org</a></p>
+                    <p><h4>ConCarolinas</h4>
+                    <em>Guest</em><br/>
+                    June 2-4, 2023<br/>
+                    Charlotte, NC<br/>
+                    <a href="https://concarolinas.org" target="_blank" class="textlink">www.concarolinas.org</a></p>
+                    <p><h4>DragonCon</h4>
+                    <em>Attendee</em><br/>
+                    September 1-3, 2023<br/>
+                    Atlanta, GA<br/>
+                    <a href="https://www.dragoncon.org" target="_blank" class="textlink">www.dragoncon.org</a></p>
+                    <p><h4>Multiverse</h4>
+                    <em>Guest</em><br/>
+                    October 20-22, 2023<br/>
+                    Atlanta, GA<br/>
+                    <a href="https://www.multiversecon.org" target="_blank"
+                       class="textlink">www.multiversecon.org</a></p>
                 </div>
             </div>
         </div>
-        <!-- First row of panels -->
-        <div class="row">
-            <!-- book panel -->
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3>
-                            <a href="/books">
-                                <i class="fa fa-fw fa-book"></i> Books</a>
-                        </h3>
-                    </div>
-                    <div class="panel-body">
-                        <a href="/books">
-                            <img class="img-responsive img-hover" src="/images/FGM.jpg" alt="">
-                        </a>
-                        <span>
-                            <h3>FAIRY GODMURDER
-                                <a href="https://www.amazon.com/dp/B09S15M55N" target="_blank">
-                                    <img src="/images/Amazon-preorder.png" width="63px"
-                                        alt="logo" />
-                                </a>
-                                <a href="https://www.goodreads.com/book/show/60117407-fairy-godmurder" target="_blank">
-                                    <img src="https://s.gr-assets.com/assets/badge/goodreads-badge-read-reviews-a8508f765fac427f58da8ebf9e89721a.png" width="63px"
-                                        alt="logo" />
-                                </a>
-                            </h3>
-						</span>
-                        <p>
-                            A fairy godmother with a vendetta and a killer pair of docs hunts down the bastard who
-                            slaughtered her first princess.
-                        </p>
-
-                        <a href="/books" class="btn btn-default">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Upcoming Appearances panel -->
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3>
-                            <i class="fa fa-fw fa-globe"></i> Upcoming Appearances
-                        </h3>
-                    </div>
-                    <div class="panel-body" style="margin-top: 20px; margin-bottom: 10px;">
-                        <% for (var i = 0; i < dates.length;  i++ ) { %>
-                            <b><%- dates[i].date%><sup><%- dates[i].sup%></sup> <%- dates[i].eventName%></b><br>
-                            <%- dates[i].type%><br>
-                            <a href="<%- dates[i].link%>" target="_blank"><%- dates[i].link%></a>
-                            <hr>
-                        <% } %>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3>
-                            <i class="fa fa-fw fa-paw"></i> Gandalf the Grey
-                        </h3>
-                    </div>
-                    <div class="panel-body" style="margin-top: 20px; margin-bottom: 60px;">
-                        <div id="gtg-carousel" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                            </ol>
-
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img class="img-responsive img-hover" src="/images/gtg/gtg_3.jpeg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive img-hover" src="/images/gtg/gtg_1.jpeg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive img-hover" src="/images/gtg/gtg_2.jpeg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive img-hover" src="/images/gtg/gtg_4.jpeg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive img-hover" src="/images/gtg/gtg_5.jpeg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive img-hover" src="/images/gtg/gtg_6.jpeg" alt="">
-                                </div>
-                            </div>
-
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#gtg-carousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#gtg-carousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-                <!-- links panel -->
-                <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3>
-                            <i class="fa fa-fw fa-paperclip"></i> Guest Blogs, Interviews, and Links
-                        </h3>
-                    </div>
-                    <div class="panel-body" style="margin-top: 20px; margin-bottom: 60px;">
-                        <% for (var i = 0; i < links.length;  i++ ) { %>
-                            <a href="<%- links[i].link%>" target="_blank"><%- links[i].title%></a>
-                            <hr>
-                        <% } %>
-                        <h3>Virtual Panels</h3>
-                            <% for (var i = 0; i < panels.length;  i++ ) { %>
-                                <b><%- panels[i].event%></b> <%- panels[i].info%>  <a href="<%- panels[i].links%>"><%- panels[i].linkText%></a><br>
-                            <% } %>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- /.row -->
-        <hr>
-        <!-- Footer -->
-        <footer>
-            <%- footer%>
-        </footer>
-    </div>
-    <!-- /.container -->
-
-    <!-- include sign up modal from components folder    -->
-
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <script src="/js/twitter.js"></script>
-
-    <script src="/js/googleAnlytics.js"></script>
+    </section>
+</main>
 </body>
-
+<%- include("./components/footer.ejs"); %>
+<footer>
+    <script type="text/javascript" src="/js/script.js"></script>
+</footer>
 </html>
