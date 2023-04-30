@@ -36,11 +36,11 @@
                         <% } %>
                 >ARTICLES</a></li>
             <li><a href="/mailing-list"
-                <% if(page_name === 'mailing_list') { %> id="current"
+                <% if(page_name === 'mailing-list') { %> id="current"
                         <% } %>
                 >MAILING LIST</a></li>
             <li><a href="/gallery"
-                <% if(page_name === 'artwork') { %> id="current"
+                <% if(page_name === 'gallery') { %> id="current"
                         <% } %>
                 >ARTWORK <span>&#11167;</span></a>
                 <ul>
@@ -60,19 +60,31 @@
             </button>
             <nav class="main-nav" id="main-nav">
                 <ul>
-                    <li class="item"><a href="<?php echo $path;?>" <?php if ($pageName=="Home") echo 'id="current"'; ?>
-                        >HOME</a></li>
-                    <li><a href="<?php echo $path;?>about" <?php if ($pageName=="About") echo 'id="current"'; ?>
+                    <li class="item"><a href="/"
+                        <% if(page_name === 'home') { %> id="current"
+                                <% } %>
+                        >HOME</a>
+                    </li>
+                    <li><a href="/author" <% if(page_name === 'author') { %> id="current"
+                            <% } %>
                         >AUTHOR</a>
-                    <li><a href="<?php echo $path;?>books" <?php if ($pageName=="Books") echo 'id="current"'; ?>
-                        >BOOKS</a></li>
+                    </li>
+                    <li><a href="/books" <% if(page_name === 'books') { %> id="current"
+                            <% } %>
+                        >BOOKS</a>
+                    </li>
                     <li>
-                        <a href="<?php echo $path;?>books/jordanconanthology.php"  <?php if ($pageName=="Books") echo 'id="current"'; ?>
-                        >ANTHOLOGIES</a></li>
-                    <li><a href="<?php echo $path;?>articles">ARTICLES</a></li>
-                    <li><a href="<?php echo $path;?>newsletter">MAILING LIST</a></li>
-                    <li><a href="<?php echo $path;?>artwork/gallery.php">ART GALLERY</a></li>
-                    <li><a href="<?php echo $path;?>about#mediakit">CONTACT</a></li>
+                        <a href="/books/jordan-con-anthology">ANTHOLOGIES</a>
+                    </li>
+                    <li><a href="/articles" <% if(page_name === 'articles') { %> id="current"
+                                <% } %>
+                        >ARTICLES</a></li>
+                    <li><a href="/mailing-list"<% if(page_name === 'mailing-list') { %> id="current"
+                                <% } %>
+                        >MAILING LIST</a></li>
+                    <li><a href="/gallery"<% if(page_name === 'gallery') { %> id="current"
+                                <% } %>>ART GALLERY</a></li>
+                    <li><a href="/author#mediakit">CONTACT</a></li>
                 </ul>
             </nav>
         </div>

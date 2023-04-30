@@ -31,7 +31,7 @@
                 <h3>Fairy Godmurder</h3>
                 <p>A fairy godmother with a vendetta and a killer pair of docs hunts down the bastard who slaughtered
                     her first princess.</p>
-                <button><a href="<?php echo $path;?>books/fairygodmurder.php">Learn More</a></button>
+                <button><a href="/books/fractured-fae">Learn More</a></button>
             </div>
         </div>
         <div class="card"><h1>ARTICLES</h1>
@@ -41,7 +41,7 @@
                 <h3>Get Cozy With Sarah</h3>
                 <p>Read Sarah's latest articles in <em>Writer's Digest</em> magazine and Dan Koboldt's <em>Science in
                         SF, Fact in Fantasy</em> series.</p>
-                <button><a href="<?php echo $path;?>articles">Read More</a></button>
+                <button><a href="/articles">Read More</a></button>
             </div>
         </div>
         <div class="card"><h1>ART SHOP</h1>
@@ -49,7 +49,7 @@
                 <img src="images/precioustime.jpg" alt="Precious Time" title="Precious Time" border="0" width="100%"/>
                 <h3>Naughty Squids & Flirty Trolls</h3>
                 <p>Drop into Sarah's shop and check out her latest artwork on your favorite everyday items.</p>
-                <button><a href="<?php echo $path;?>shop">Visit Shop</a></button>
+                <button><a href="/gallery">Visit Shop</a></button>
             </div>
         </div>
     </section>
@@ -68,28 +68,7 @@
             </div>
             <div class="text-container">
                 <div class="textconwrap">
-                    <h3>COME VISIT ME</h3>
-                    <p><h4>JordanCon</h4>
-                    <em>Guest</em><br/>
-                    April 21-23, 2023<br/>
-                    Atlanta, GA<br/>
-                    <a href="https://www.jordancon.org" target="_blank" class="textlink">www.jordancon.org</a></p>
-                    <p><h4>ConCarolinas</h4>
-                    <em>Guest</em><br/>
-                    June 2-4, 2023<br/>
-                    Charlotte, NC<br/>
-                    <a href="https://concarolinas.org" target="_blank" class="textlink">www.concarolinas.org</a></p>
-                    <p><h4>DragonCon</h4>
-                    <em>Attendee</em><br/>
-                    September 1-3, 2023<br/>
-                    Atlanta, GA<br/>
-                    <a href="https://www.dragoncon.org" target="_blank" class="textlink">www.dragoncon.org</a></p>
-                    <p><h4>Multiverse</h4>
-                    <em>Guest</em><br/>
-                    October 20-22, 2023<br/>
-                    Atlanta, GA<br/>
-                    <a href="https://www.multiversecon.org" target="_blank"
-                       class="textlink">www.multiversecon.org</a></p>
+                    <%- include("./components/eventList.ejs", { dates: dates }); %>
                 </div>
             </div>
         </div>
