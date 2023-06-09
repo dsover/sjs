@@ -1,99 +1,157 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Sarah J. Sover | Art Gallery</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <!-- SEO tags -->
-    <meta name="description"
+     <meta charset="UTF-8">
+     <title>Sarah J. Sover | Art Gallery</title>
+     <meta content="width=device-width, initial-scale=1" name="viewport" />
+     <!-- SEO tags -->
+     <meta name="description"
           content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers.">
-    <meta name="author" content="Studio SJS">
-    <meta property="og:image" content="http://www.sarahjsover.com/images/DCTB_3.png">
-    <meta property="og:url" content="http://www.sarahjsover.com"/>
-    <meta property="og:site_name" content="Sarah J Sover"/>
-    <meta property="og:title" content="Website of author Sarah J. Sover"/>
-    <meta property="og:description"
-          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."/>
-    <!-- includes -->
-    <script src="/js/jquery_3_2_1.min.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png"/>
-    <link rel="stylesheet" href="/css/montserrat.css">
-    <link rel="stylesheet" media="screen" href="/css/style.css"/>
+     <meta name="author" content="Studio SJS">
+     <meta property="og:image" content="http://www.sarahjsover.com/images/DCTB_3.png">
+     <meta property="og:url" content="http://www.sarahjsover.com" />
+     <meta property="og:site_name" content="Sarah J Sover" />
+     <meta property="og:title" content="Website of author Sarah J. Sover" />
+     <meta property="og:description"
+          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers." />
+     <!-- includes -->
+     <script src="/js/jquery_3_2_1.min.js"></script>
+     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
+     <link rel="stylesheet" href="/css/montserrat.css">
+     <link rel="stylesheet" media="screen" href="/css/style.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
+
 <body>
-<%- include("./components/header.ejs", { page_name: "gallery", page_url:'/'}); %>
-<main id="shop">
-    <section class="gallery">
-        <h1 class="h1">Art Gallery</h1>
-        <div class="wrapper">
-            <img src="/images/flymetothemoon.png" alt="Fly Me to the Moon by Sarah J. Sover"
-                 title="Fly Me to the Moon by Sarah J. Sover">
-            <img src="/images/supersquirrel.png" alt="Super Squirrel by Sarah J. Sover"
-                 title="Super Squirrel by Sarah J. Sover">
-            <img src="/images/figtreepark.png" alt="Fig Tree Park by Sarah J. Sover"
-                 title="Fig Tree Park by Sarah J. Sover">
-            <img src="/images/midnightowl.png" alt="Midnight Owl by Sarah J. Sover"
-                 title="Midnight Owl by Sarah J. Sover">
-            <img src="/images/bip_thebabykraken.png" alt="Bip the Baby Kraken by Sarah J. Sover"
-                 title="Bip the Baby Kraken by Sarah J. Sover">
-            <img src="/images/perspective.png" alt="Perspective by Sarah J. Sover"
-                 title="Perspective by Sarah J. Sover">
-            <img src="/images/precioustime.png" alt="Precious Time by Sarah J. Sover"
-                 title="Precious Time by Sarah J. Sover">
-            <img src="/images/bug_thedragon.png" alt="Bug the Dragon by Sarah J. Sover"
-                 title="Bug the Dragon by Sarah J. Sover">
-            <img src="/images/vikinglonghouse.png" alt="Viking Longhouse by Sarah J. Sover"
-                 title="Viking Longhouse by Sarah J. Sover">
-            <img src="/images/chasingfireflies.png" alt="Chasing Fireflies by Sarah J. Sover"
-                 title="Chasing Fireflies by Sarah J. Sover">
-        </div>
-    </section>
-    <section class="shop" id="shopitems">
-        <h1 class="h2">Redbubble Shop</h1>
-        <div class="card">
-            <h1>BABY KRAKEN STICKER</h1>
-            <div class="cardtext">
-                <img src="../images/sticker_babykraken.jpg" alt="Baby Kraken" title="Baby Kraken" border="0"
-                     width="100%"/>
+     <%- include("./components/header.ejs", { page_name: "gallery" , page_url:'/'}); %>
+     <main id="shop">
+
+
+          <section class="gallery" id="gallery">
+      
+            <h1 class="h1">Art Gallery</h1>
+      
+      
+            <div class="container-all">
+      
+      
+              <div class="container">
+                <img src="/images/gallery_daysgoneby.jpg" alt="">
+                <span class="text">Days Gone By Sarah J. Sover</span>
+              </div>
+      
+              <div class="container">
+                <img src="/images/gallery_figtreepark.jpeg" alt="">
+                <span class="text">Fig Tree Park by Sarah J. Sover</span>
+              </div>
+      
+              <div class="container">
+                <img src="/images/gallery_flyme.jpg" alt="">
+                <span class="text">Fly Me to the Moon Sarah J. Sover</span>
+              </div>
+      
+              <div class="container">
+                <img src="/images/gallery_longhouse.jpg" alt="">
+                <span class="text">Viking Longhouse by Sarah J. Sover</span>
+              </div>
+      
+              <div class="container">
+                <img src="/images/gallery_precious.jpg" alt="">
+                <span class="text">Precious Memories by Sarah J. Sover</span>
+              </div>
+      
+              <div class="container">
+                <img src="/images/gallery_fireflies.jpeg" alt="">
+                <span class="text">Chasing Fireflies by Sarah J. Sover</span>
+              </div>
+      
+              <div class="container">
+                <img src="/images/gallery_midnightowl.jpg" alt="">
+                <span class="text">Midnight Owl By Sarah J. Sover</span>
+              </div>
+      
+              <div class="container">
+                <img src="/images/gallery_perspective.jpg" alt="">
+                <span class="text">Perspective Sarah J. Sover</span>
+              </div>
+      
+              <div class="container">
+                <img src="/images/gallery_bug.png" alt="">
+                <span class="text">Bug the Dragon by Sarah J. Sover</span>
+              </div>
+      
+              <div class="container">
+                <img src="/images/gallery_waterlily3.jpg" alt="">
+                <span class="text">Waterlily 3 By Sarah J. Sover</span>
+              </div>
+      
+              <div class="container">
+                <img src="/images/supersquirrel.png" alt="">
+                <span class="text">Super Squirrel By Sarah J. Sover</span>
+              </div>
+      
+              <div class="container">
+                <img src="/images/gallery_bip.png" alt="">
+                <span class="text">Bip the Baby Kraken by Sarah J. Sover</span>
+              </div>
+            </div>
+      
+          </section>
+          <section class="shop" id="shopitems">
+            <h1 class="h2">Redbubble Shop</h1>
+            <div class="card">
+              <h1>BABY KRAKEN STICKER</h1>
+              <div class="cardtext">
+                <img src="../images/sticker_babykraken.jpg" alt="Baby Kraken" title="Baby Kraken" border="0" width="100%" />
                 <p><strong>$2.69 - $7.42</strong></p>
                 <p>Bip the baby kraken wants you to know it was an accident! Art inspired by the short story <em>Kraken
-                        Down</em>, found in the JordanCon 2022 <em>Neither Beginnings Nor Endings</em> Anthology.</p>
+                    Down</em>, found in the JordanCon 2022 <em>Neither Beginnings Nor Endings</em> Anthology.</p>
                 <button><a href="https://www.redbubble.com/i/sticker/Baby-Kraken-by-SJSover/73852174.QK27K"
-                           target="_blank">Purchase</a></button>
+                    target="_blank">Purchase</a></button>
+              </div>
             </div>
-        </div>
-        <div class="card">
-            <h1>FLIRTY TROLL STICKER</h1>
-            <div class="cardtext">
+      
+            <div class="card">
+              <h1>FLIRTY TROLL STICKER</h1>
+              <div class="cardtext">
                 <img src="../images/sticker_flirtytroll.jpg" alt="Flirty Troll" title="Flirty Troll" border="0"
-                     width="100%"/>
+                  width="100%" />
                 <p><strong>$2.69 - $12.36</strong></p>
-                <p>This troll is sexy and he knows it! Based on the character Kradduk from <em>Double-Crossing the
-                        Bridge</em> by Sarah J. Sover (that's me!)</p>
+      
+                <p>This troll is sexy and he knows it! Based on the character Kradduk from <em>Double-Crossing the Bridge</em>
+                  by Sarah J. Sover (that's me!)</p>
                 <button><a href="https://www.redbubble.com/i/sticker/Flirty-Troll-by-SJSover/73952665.4JQVK"
-                           target="_blank">Purchase</a></button>
+                    target="_blank">Purchase</a></button>
+              </div>
             </div>
-        </div>
-        <div class="card">
-            <h1>MIDNIGHT OWL PRINT</h1>
-            <div class="cardtext">
-                <img src="../images/print_midnightowl.jpg" alt="Midnight Owl" title="Midnight Owl" border="0"
-                     width="100%"/>
+      
+            <div class="card">
+              <h1>MIDNIGHT OWL PRINT</h1>
+              <div class="cardtext">
+                <img src="../images/print_midnightowl.jpg" alt="Midnight Owl" title="Midnight Owl" border="0" width="100%" />
                 <p><strong>$24.04 - $62.47</strong></p>
-                <p>This is a print of a painting done in acrylics. It was inspired by a photo that caught my imagination&mdash;an
-                    owl who seemed to hold vast galaxies in its feathers.</p>
+      
+                <p>This is a print of a painting done in acrylics. It was inspired by a photo that caught my
+                  imagination&mdash;an owl who seemed to hold vast galaxies in its feathers.</p>
                 <button><a href="https://www.redbubble.com/i/art-print/Midnight-Owl-by-SJSover/139476663.C3TL5"
-                           target="_blank">Purchase</a></button>
+                    target="_blank">Purchase</a></button>
+              </div>
             </div>
-        </div>
-    </section>
-    <div class="viewmore">
-        <button><a href="https://www.redbubble.com/people/SJSover/shop" target="_blank">View all Redbubble shop items
+      
+          </section>
+      
+          <div class="viewmore">
+            <button><a href="https://www.redbubble.com/people/SJSover/shop" target="_blank">View all Redbubble shop items
                 ></a></button>
-    </div>
-</main>
-<%- include("./components/footer.ejs"); %>
+          </div>
+      
+        </main>
+          <%- include("./components/footer.ejs"); %>
 </body>
 <footer>
-    <script type="text/javascript" src="/js/script.js"></script>
+     <script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
+     <script type="text/javascript" src="/js/script.js"></script>
 </footer>
+
 </html>
