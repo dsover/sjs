@@ -1,0 +1,93 @@
+<header>
+    <div class="logo"><a href="<%= page_url %>"><img src="/images/SJSlogo.png" width="500" height="auto"
+                                                     alt="Sarah J. Sover" title="Sarah J. Sover"/></a></div>
+    <div id="nav-menu">
+        <ul>
+            <li class="item"><a href="/"
+                <% if(page_name === 'home') { %> id="current"
+                        <% } %>
+                >HOME</a>
+            </li>
+            <li><a href="/author"
+                <% if(page_name === 'author') { %> id="current"
+                        <% } %>
+                >AUTHOR <span>&#11167;</span></a>
+                <ul>
+                    <li><a href="/author">About</a></li>
+                    <li><a href="/author#mediakit">Media Kit</a></li>
+                    <li class="last"><a href="/mailing-list#linktree">LINKTREE</a></li>
+                </ul>
+            </li>
+            <li><a href="/books"
+                <% if(page_name === 'books') { %> id="current"
+                        <% } %>
+                >BOOKS <span>&#11167;</span></a>
+                <ul>
+                    <li><a href="/books/double-crossing-the-bridge">Double-Crossing the Bridge</a>
+                    </li>
+                    <li><a href="/books/fractured-fae">Fractured Fae Series</a></li>
+                    <li><a href="/books/jordan-con-anthology">JordanCon Anthologies</a></li>
+                    <li class="last"><a href="/books/putting-the-fact-in-fantasy">Putting the Fact in
+                            Fantasy</a></li>
+                </ul>
+            </li>
+            <li><a href="/articles"
+                <% if(page_name === 'articles') { %> id="current"
+                        <% } %>
+                >ARTICLES</a></li>
+            <li><a href="/mailing-list"
+                <% if(page_name === 'mailing-list') { %> id="current"
+                        <% } %>
+                >MAILING LIST</a></li>
+            <li><a href="/gallery"
+                <% if(page_name === 'gallery') { %> id="current"
+                        <% } %>
+                >ARTWORK <span>&#11167;</span></a>
+                <ul>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li class="last"><a href="/gallery#shopitems">SHOP</a></li>
+                </ul>
+            </li>
+            <li><a href="/author#mediakit">CONTACT</a></li>
+        </ul>
+    </div>
+    <!-- Hamburger Header -->
+    <div class="device">
+        <div class="container">
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+                <span class="burger-text">Menu</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li class="item"><a href="/"
+                        <% if(page_name === 'home') { %> id="current"
+                                <% } %>
+                        >HOME</a>
+                    </li>
+                    <li><a href="/author" <% if(page_name === 'author') { %> id="current"
+                            <% } %>
+                        >AUTHOR</a>
+                    </li>
+                    <li><a href="/books" <% if(page_name === 'books') { %> id="current"
+                            <% } %>
+                        >BOOKS</a>
+                    </li>
+                    <li>
+                        <a href="/books/jordan-con-anthology">ANTHOLOGIES</a>
+                    </li>
+                    <li><a href="/articles" <% if(page_name === 'articles') { %> id="current"
+                                <% } %>
+                        >ARTICLES</a></li>
+                    <li><a href="/mailing-list"<% if(page_name === 'mailing-list') { %> id="current"
+                                <% } %>
+                        >MAILING LIST</a></li>
+                    <li><a href="/gallery"<% if(page_name === 'gallery') { %> id="current"
+                                <% } %>>ART GALLERY</a></li>
+                    <li><a href="/author#mediakit">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+

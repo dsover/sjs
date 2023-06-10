@@ -1,0 +1,8 @@
+<h3>COME VISIT ME</h3>
+<% for (var i = 0; i < dates.length;  i++ ) { %>
+    <p><h4><%- dates[i].eventName%></h4>
+    <em><%- dates[i].type%></em><br/>
+    <%- dates[i].date%><sup><%- dates[i].sup%></sup>, <%- dates[i].year%><br/>
+    <%- dates[i].location%><br/>
+    <a href="<%- dates[i].link%>" target="_blank" class="textlink"><%- dates[i].link%></a></p>
+<% } %>
