@@ -75,7 +75,7 @@ header {
 header .logo {
   display:flex;
   flex-wrap: nowrap;
-  flex:0 0 20%;
+  flex:0 0 30%;
   justify-content:flex-start;
   align-items:flex-start;
 }
@@ -405,12 +405,10 @@ img{
   max-width: 100%;
   display:block;
   overflow:hidden;
-  cursor:pointer;
 }
 .gallery .title{
   position:absolute;
   display:block;
-  cursor:pointer;
   top: 35%;
   display: none;
   left: 50%;
@@ -424,7 +422,6 @@ img{
 .gallery .text{
   position:absolute;
   top: 70%;
-  cursor:pointer;
   max-width: 80%;
   text-align:center;
   left: 50%;
