@@ -24,16 +24,17 @@
 <%- include("./components/header.ejs", { page_name: "home", page_url:'/'}); %>
 <main id="home">
     <section class="noir">
-        <div class="card">
+        <div class="card" onclick="window.location.href='/books';" style="cursor: pointer;">
             <h1>BOOKS</h1>
             <div class="cardtext">
                 <img src="/images/FTB.jpg" alt="Faed To Black" title="Faed To Black" border="0" width="100%"/>
                 <h3>Faed To Black</h3>
                 <p>Ex-fairy godmother Gwendolyn Evenshine's world is turned upside down when her Seelie royal family members start dropping like flies. Thankfully, she's got Chessa Moon to back her up.</p>
-                <button><a href="/books/fractured-fae#ftb">Learn More</a></button>
+                <button><a href="/books">Learn More</a></button>
             </div>
         </div>
-        <div class="card"><h1>ARTICLES</h1>
+        <div class="card" onclick="window.location.href='/articles';" style="cursor: pointer;">
+            <h1>ARTICLES</h1>
             <div class="cardtext">
                 <img src="/images/writersdigest2023.jpg" alt="Writer's Digest" title="Writer's Digest" border="0"
                      width="100%"/>
@@ -43,12 +44,13 @@
                 <button><a href="/articles">Read More</a></button>
             </div>
         </div>
-        <div class="card"><h1>ART SHOP</h1>
+        <div class="card" onclick="window.location.href='/gallery';" style="cursor: pointer;">
+            <h1>ARTWORK</h1>
             <div class="cardtext">
                 <img src="images/precioustime.jpg" alt="Precious Time" title="Precious Time" border="0" width="100%"/>
                 <h3>Naughty Squids & Flirty Trolls</h3>
                 <p>Drop into Sarah's shop and check out her latest artwork on your favorite everyday items.</p>
-                <button><a href="/gallery">Visit Shop</a></button>
+                <button><a href="/gallery">Visit Artwork</a></button>
             </div>
         </div>
     </section>
@@ -57,13 +59,23 @@
         <div class="polaroids">
             <div class="card-container">
                 <div class="cardz"
-                     style="--image: url('/images/con_carolinas_2022.jpg'); --angle: -5deg; --x: 5%; --y: 15%; --caption: 'ConCarolinas, 2022'"></div>
+                     style="--image: url('/images/con_carolinas_2022.jpg'); --angle: 15deg; --x: 7%; --y: 19%; --caption: 'ConCarolinas, 2022'">
+                </div>
                 <div class="cardz"
-                     style="--image: url('/images/the_annual_writers_digest_conference2019.jpg'); --angle: -1deg; --x: -10%; --y: -20%; --caption: 'The Annual Writers Digest Conference, 2019'"></div>
+                    style="--image: url('/images/me.jpg'); --angle: -10deg; --x: -37%; --y: -22%; --caption: 'Multiverse 2023'">
+                </div>
                 <div class="cardz"
-                     style="--image: url('/images/atl_comic_con_2023.jpg'); --angle: -4deg; --x: -20%; --y: 5%; --caption: 'Atlanta ComicCon, 2023'"></div>
+                     style="--image: url('/images/the_annual_writers_digest_conference2019.jpg'); --angle: 3deg; --x: -7%; --y: -23%; --caption: 'The Annual Writers Digest Conference, 2019'">
+                </div>
                 <div class="cardz"
-                     style="--image: url('/images/jordan_con_2021.jpg'); --angle: 7deg; --x: 10%; --y: -7%; --caption: 'JordanCon, 2021'"></div>
+                     style="--image: url('/images/spoike.jpg'); --angle: -15deg; --x: -37%; --y: 18%; --caption: 'Casting a losing vote for Spike during CONjuration 2023'">
+                </div>
+                <div class="cardz"
+                     style="--image: url('/images/atl_comic_con_2023.jpg'); --angle: -4deg; --x: -20%; --y: 0%; --caption: 'Atlanta ComicCon, 2023'">
+                </div>
+                <div class="cardz"
+                     style="--image: url('/images/jordan_con_2021.jpg'); --angle: 7deg; --x: 10%; --y: -7%; --caption: 'JordanCon, 2021'">
+                </div>
             </div>
             <div class="text-container">
                 <div class="textconwrap">

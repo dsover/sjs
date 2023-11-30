@@ -636,6 +636,11 @@ main .viewmore button{
   padding:150px 100px 100px;
   align-items:flex-start;
 }
+.no-background {
+  background-image: none;
+  padding:0px 100px 100px;
+
+}
 
 .media h4 {
     margin:0;
