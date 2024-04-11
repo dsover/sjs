@@ -1,116 +1,226 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Sarah J. Sover | Books</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <!-- SEO tags -->
-    <meta name="description"
-        content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers.">
-    <meta name="author" content="Studio SJS">
-    <meta property="og:image" content="http://www.sarahjsover.com/images/DCTB_3.png">
+    <meta
+      name="description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
+    <meta name="author" content="Studio SJS" />
+    <meta
+      property="og:image"
+      content="http://www.sarahjsover.com/images/DCTB_3.png"
+    />
     <meta property="og:url" content="http://www.sarahjsover.com" />
     <meta property="og:site_name" content="Sarah J Sover" />
     <meta property="og:title" content="Website of author Sarah J. Sover" />
-    <meta property="og:description"
-        content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers." />
+    <meta
+      property="og:description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
     <!-- includes -->
     <script src="/js/jquery_3_2_1.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
-    <link rel="stylesheet" href="/css/montserrat.css">
+    <link rel="stylesheet" href="/css/montserrat.css" />
     <link rel="stylesheet" media="screen" href="/css/style.css" />
-</head>
+  </head>
 
-<body>
-    <%- include("../components/header.ejs", { page_name: "books" , page_url:'/'}); %>
-        <main id="books">
-            <section class="noir">
-                <div class="card">
-                    <h1>&nbsp;</h1>
-                    <div class="cardtext">
-                        <img src="/images/FTB.jpg" alt="Faed To Black" title="Faed To Black" border="0" width="100%" />
-                        <p>Ex-fairy godmother Gwendolyn Evenshine's world is turned upside down when her Seelie royal
-                            family members start dropping like flies. Thankfully, she's got Chessa Moon to back her up.
-                        </p>
-                        <button><a href="/books/fractured-fae">Learn More</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <h1>&nbsp;</h1>
-                    <div class="cardtext">
-                        <img src="../images/FGM.jpg" alt="Fairy Godmurder" title="Fairy Godmurder" border="0"
-                            width="100%" />
-                        <p>A fairy godmother with a vendetta and a killer pair of docs hunts down the bastard who
-                            slaughtered
-                            her first princess.</p>
-                        <button><a href="/books/fractured-fae">Learn More</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <h1>&nbsp;</h1>
-                    <div class="cardtext">
-                        <img src="../images/DCTB_3.png" alt="Double-Crossing the Bridge"
-                            title="Double-Crossing the Bridge" border="0" width="100%" />
-                        <p>Rent in New Metta is through the cavern ceiling. When Granu barely survives her first gig
-                            teaching
-                            students who attempt to fillet her for lunch, the baby-eating troll ends up unemployed and
-                            facing
-                            eviction. Granu's only prospect for income is grueling work in the tar pits. That is, until
-                            her
-                            playboy best friend devises a perfect, if suicidal, scheme&mdash;a heist!</p>
-                        <button><a href="/books/double-crossing-the-bridge">Read more</a></button>
-                    </div>
-                </div>
-            </section>
-            <section class="media" id="anthology" name="mediakit">
-                <div class="card">
-                    <h1>&nbsp;</h1>
-                    <div class="cardtext">
-                        <img src="../images/neitherbeginningsnorendings.png" alt="Neither Beginnings Nor Endings"
-                            title="Neither Beginnings Nor Endings" border="0" width="100%" />
-                        <p>The JordanCon 2022 Anthology: Neither Beginnings Nor Endings</p>
-                        <button><a href="/books/jordan-con-anthology">Read more</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <h1>&nbsp;</h1>
-                    <div class="cardtext">
-                        <img src="../images/becomelegend.jpg" alt="Become Legend" title="Become Legend" border="0"
-                            width="100%" />
-                        <p>The JordanCon 2020 Anthology: Become Legend</p>
-                        <button><a href="/books/jordan-con-anthology">Read more</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <h1>&nbsp;</h1>
-                    <div class="cardtext">
-                        <img src="../images/youwantstories.jpg" alt="Become Legend" title="Become Legend" border="0"
-                            width="100%" />
-                        <p>The JordanCon 2019 Anthology: You Want Stories?</p>
-                        <button><a href="/books/jordan-con-anthology">Read more</a></button>
-                    </div>
-                </div>
-            </section>
-            <section class="media no-background" id="anthology" name="mediakit">
-                <div class="card">
-                    <h1>&nbsp;</h1>
-                    <div class="cardtext">
-                        <img src="../images/puttingthefactinfantasy.jpg" alt="Putting the Fact in Fantasy"
-                            title="Putting the Fact in Fantasy" border="0" width="100%" />
-                        <p>Whether it's correctly naming the parts of a horse, knowing how lords and ladies address one
-                            another,
-                            or building a realistic fantasy army, getting the details right takes fantasy writing to the
-                            next level.</p>
-                        <button><a href="/books/putting-the-fact-in-fantasy">Read more</a></button>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <%- include("../components/footer.ejs"); %>
-</body>
-<footer>
+  <body>
+    <%- include("../components/header.ejs", { page_name: "books" ,
+    page_url:'/'}); %>
+    <main id="books">
+      <section class="noir">
+        <div class="card">
+          <h1>&nbsp;</h1>
+          <div class="cardtext">
+            <img
+              src="/images/FTB.jpg"
+              alt="Faed To Black"
+              title="Faed To Black"
+              border="0"
+              width="100%"
+            />
+            <p>
+              Ex-fairy godmother Gwendolyn Evenshine's world is turned upside
+              down when her Seelie royal family members start dropping like
+              flies. Thankfully, she's got Chessa Moon to back her up.
+            </p>
+            <button><a href="/books/fractured-fae">Learn More</a></button>
+          </div>
+        </div>
+        <div class="card">
+          <h1>&nbsp;</h1>
+          <div class="cardtext">
+            <img
+              src="../images/FGM.jpg"
+              alt="Fairy Godmurder"
+              title="Fairy Godmurder"
+              border="0"
+              width="100%"
+            />
+            <p>
+              A fairy godmother with a vendetta and a killer pair of docs hunts
+              down the bastard who slaughtered her first princess.
+            </p>
+            <button><a href="/books/fractured-fae">Learn More</a></button>
+          </div>
+        </div>
+        <div class="card">
+          <h1>&nbsp;</h1>
+          <div class="cardtext">
+            <img
+              src="../images/DCTB_3.png"
+              alt="Double-Crossing the Bridge"
+              title="Double-Crossing the Bridge"
+              border="0"
+              width="100%"
+            />
+            <p>
+              Rent in New Metta is through the cavern ceiling. When Granu barely
+              survives her first gig teaching students who attempt to fillet her
+              for lunch, the baby-eating troll ends up unemployed and facing
+              eviction. Granu's only prospect for income is grueling work in the
+              tar pits. That is, until her playboy best friend devises a
+              perfect, if suicidal, scheme&mdash;a heist!
+            </p>
+            <button>
+              <a href="/books/double-crossing-the-bridge">Read more</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="media" id="anthology" name="mediakit">
+        <div class="card">
+          <h1>&nbsp;</h1>
+          <div class="cardtext">
+            <img
+              src="../images/neitherbeginningsnorendings.png"
+              alt="Neither Beginnings Nor Endings"
+              title="Neither Beginnings Nor Endings"
+              border="0"
+              width="100%"
+            />
+            <p>The JordanCon 2022 Anthology: Neither Beginnings Nor Endings</p>
+            <button>
+              <a
+                href="/books/short-story-anthologies#NeitherBeginningsNorEndings"
+                >Read more</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <h1>&nbsp;</h1>
+          <div class="cardtext">
+            <img
+              src="../images/becomelegend.jpg"
+              alt="Become Legend"
+              title="Become Legend"
+              border="0"
+              width="100%"
+            />
+            <p>The JordanCon 2020 Anthology: Become Legend</p>
+            <button>
+              <a href="/books/short-story-anthologies#becomeLegend"
+                >Read more</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <h1>&nbsp;</h1>
+          <div class="cardtext">
+            <img
+              src="../images/youwantstories.jpg"
+              alt="Become Legend"
+              title="Become Legend"
+              border="0"
+              width="100%"
+            />
+            <p>The JordanCon 2019 Anthology: You Want Stories?</p>
+            <button>
+              <a href="/books/short-story-anthologies#youWantStories"
+                >Read more</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="media no-background" id="anthology" name="mediakit">
+        <div class="card">
+          <h1>&nbsp;</h1>
+          <div class="cardtext">
+            <img
+              src="../images/puttingthefactinfantasy.jpg"
+              alt="Putting the Fact in Fantasy"
+              title="Putting the Fact in Fantasy"
+              border="0"
+              width="100%"
+            />
+            <p>
+              Whether it's correctly naming the parts of a horse, knowing how
+              lords and ladies address one another, or building a realistic
+              fantasy army, getting the details right takes fantasy writing to
+              the next level.
+            </p>
+            <button>
+              <a href="/books/non-fiction-anthologies#PuttingTheFactInFantasy"
+                >Read more</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <h1>&nbsp;</h1>
+          <div class="cardtext">
+            <img
+              src="../images/reflections_anthology.jpg"
+              alt="Reflections"
+              title="Reflections"
+              border="0"
+              width="100%"
+            />
+            <p>
+              Gold Dust Publishing brings you Reflections. A charity book
+              featuring over forty authors, actors, musicians, entertainers,
+              teachers, counselors, and everyday...
+            </p>
+            <button>
+              <a href="/books/non-fiction-anthologies#Reflections">Read more</a>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <h1>&nbsp;</h1>
+          <div class="cardtext">
+            <img
+              src="../images/hidden_villains_betrayed.jpg"
+              alt="Hidden Villains Betrayed"
+              title="Hidden Villains Betrayed"
+              border="0"
+              width="100%"
+            />
+            <p>
+              Fantasy, Science Fiction, and Speculative Fiction anthology led by
+              best-selling author Kevin J. Anderson. A diverse group of authors
+              join in with a broad spectrum of genres and styles sure to capture
+              your imagination
+            </p>
+            <button>
+              <a href="/books/short-story-anthologies#HiddenVillainsBetrayed"
+                >Read more</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include("../components/footer.ejs"); %>
+  </body>
+  <footer>
     <script type="text/javascript" src="/js/script.js"></script>
-</footer>
-
+  </footer>
 </html>

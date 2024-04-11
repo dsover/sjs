@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Sarah J. Sover | 404</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <!-- SEO tags -->
-    <meta name="description"
-          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers.">
-    <meta name="author" content="Studio SJS">
-    <meta property="og:image" content="http://www.sarahjsover.com/images/DCTB_3.png">
-    <meta property="og:url" content="http://www.sarahjsover.com"/>
-    <meta property="og:site_name" content="Sarah J Sover"/>
-    <meta property="og:title" content="Website of author Sarah J. Sover"/>
-    <meta property="og:description"
-          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."/>
+    <meta
+      name="description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
+    <meta name="author" content="Studio SJS" />
+    <meta
+      property="og:image"
+      content="http://www.sarahjsover.com/images/DCTB_3.png"
+    />
+    <meta property="og:url" content="http://www.sarahjsover.com" />
+    <meta property="og:site_name" content="Sarah J Sover" />
+    <meta property="og:title" content="Website of author Sarah J. Sover" />
+    <meta
+      property="og:description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
     <!-- includes -->
     <script src="/js/jquery_3_2_1.min.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png"/>
-    <link rel="stylesheet" href="/css/montserrat.css">
-    <link rel="stylesheet" media="screen" href="/css/style.css"/>
-</head>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/css/montserrat.css" />
+    <link rel="stylesheet" media="screen" href="/css/style.css" />
+  </head>
 
-<body>
-<%- include("./components/header.ejs", { page_name: "author", page_url:'/'}); %>
-<main id="404">
-    <section class="about">
-    <div class="card-three"><h1>404</h1>
+  <body>
+    <%- include("./components/header.ejs", { page_name: "author",
+    page_url:'/'}); %>
+    <main id="404">
+      <section class="cons no-background">
         <div class="cardtext">
-
-                <p>The page you're looking for could not be found. Here are some helpful links to get you back on track:</p>
-                <ul>
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/author">Author</a>
-                    </li>
-                    <li>
-                        <a href="/books">Books</a>
-                    </li>
-                    <li>
-                        <a href="/articles">Articles</a>
-                    </li>
-                    <li>
-                        <a href="/mailing-list">Mailing List</a>
-                    </li>
-                    <li>
-                        <a href="/gallery">Artwork</a>
-                    </li>
-                    <li>
-                        <a href="/game">Defend New Meta</a>
-                    </li>
-                </ul>
+          <h1>404</h1>
+          <p>
+            The page you're looking for could not be found. Here are some
+            helpful links to get you back on track:
+          </p>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/author">Author</a>
+            </li>
+            <li>
+              <a href="/books">Books</a>
+            </li>
+            <li>
+              <a href="/articles">Articles</a>
+            </li>
+            <li>
+              <a href="/mailing-list">Mailing List</a>
+            </li>
+            <li>
+              <a href="/gallery">Artwork</a>
+            </li>
+            <li>
+              <a href="/game">Defend New Meta</a>
+            </li>
+          </ul>
         </div>
-    </div>
-    </section>
-</main>
-<%- include("./components/footer.ejs"); %>
-</body>
-<footer>
+      </section>
+    </main>
+    <%- include("./components/footer.ejs"); %>
+  </body>
+  <footer>
     <script type="text/javascript" src="/js/script.js"></script>
-</footer>
+  </footer>
 </html>

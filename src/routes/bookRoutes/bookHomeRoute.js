@@ -11,12 +11,12 @@ module.exports = function(app, extras) {
     res.setHeader('Content-Type', 'text/html');
     res.render('books/fractured-fae', {});
   });
-  app.get('/books/jordan-con-anthology', function(req, res) {
+  app.get('/books/short-story-anthologies', function(req, res) {
     res.setHeader('Content-Type', 'text/html');
-    res.render('books/jordan-con-anthology', {});
+    res.render('books/short-story-anthologies', {});
   });
-  app.get('/books/putting-the-fact-in-fantasy', function(req, res) {
+  app.get('/books/non-fiction-anthologies', function(req, res) {
     res.setHeader('Content-Type', 'text/html');
-    res.render('books/putting-the-fact-in-fantasy', {});
+    res.render('books/non-fiction-anthologies', {});
   });
 };

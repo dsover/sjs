@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Sarah J. Sover | Game</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <!-- SEO tags -->
-    <meta name="description"
-          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers.">
-    <meta name="author" content="Studio SJS">
-    <meta property="og:image" content="http://www.sarahjsover.com/images/DCTB_3.png">
-    <meta property="og:url" content="http://www.sarahjsover.com"/>
-    <meta property="og:site_name" content="Sarah J Sover"/>
-    <meta property="og:title" content="Website of author Sarah J. Sover"/>
-    <meta property="og:description"
-          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."/>
+    <meta
+      name="description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
+    <meta name="author" content="Studio SJS" />
+    <meta
+      property="og:image"
+      content="http://www.sarahjsover.com/images/DCTB_3.png"
+    />
+    <meta property="og:url" content="http://www.sarahjsover.com" />
+    <meta property="og:site_name" content="Sarah J Sover" />
+    <meta property="og:title" content="Website of author Sarah J. Sover" />
+    <meta
+      property="og:description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
     <!-- includes -->
     <script src="/js/jquery_3_2_1.min.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png"/>
-    <link rel="stylesheet" href="/css/montserrat.css">
-    <link rel="stylesheet" media="screen" href="/css/style.css"/>
-</head>
-<body>
-<%- include("./components/header.ejs", { page_name: "author", page_url:'/'}); %>
-<main id="404">
-    <section class="about">
-        <div class="card-three"><h1>Beware The Goats!!!</h1>
-            <div class="cardtext">
-                <iframe src="http://sjs-bewarethegoats.s3-website.us-east-2.amazonaws.com/" width="1024" height="720">
-            </div>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/css/montserrat.css" />
+    <link rel="stylesheet" media="screen" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include("./components/header.ejs", { page_name: "author",
+    page_url:'/'}); %>
+    <main id="404">
+      <section class="about">
+        <div class="card-three">
+          <h1>Beware The Goats!!!</h1>
+          <div class="cardtext">
+            <iframe
+              src="http://sjs-bewarethegoats.s3-website.us-east-2.amazonaws.com/"
+              width="1024"
+              height="720"
+            />
+          </div>
         </div>
-    </section>
-</main>
-<%- include("./components/footer.ejs"); %>
-</body>
-<footer>
+      </section>
+    </main>
+    <%- include("./components/footer.ejs"); %>
+  </body>
+  <footer>
     <script type="text/javascript" src="/js/script.js"></script>
-</footer>
+  </footer>
+</html>

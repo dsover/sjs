@@ -1,93 +1,181 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Sarah J. Sover | Not for Everyone</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <!-- SEO tags -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description"
-          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers.">
-    <meta name="author" content="Studio SJS">
-    <meta property="og:image" content="http://www.sarahjsover.com/images/DCTB_3.png">
-    <meta property="og:url" content="http://www.sarahjsover.com"/>
-    <meta property="og:site_name" content="Sarah J Sover"/>
-    <meta property="og:title" content="Website of author Sarah J. Sover"/>
-    <meta property="og:description"
-          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
+    <meta name="author" content="Studio SJS" />
+    <meta
+      property="og:image"
+      content="http://www.sarahjsover.com/images/DCTB_3.png"
+    />
+    <meta property="og:url" content="http://www.sarahjsover.com" />
+    <meta property="og:site_name" content="Sarah J Sover" />
+    <meta property="og:title" content="Website of author Sarah J. Sover" />
+    <meta
+      property="og:description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
     <!-- includes -->
     <script src="/js/jquery_3_2_1.min.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png"/>
-    <link rel="stylesheet" href="/css/montserrat.css">
-    <link rel="stylesheet" media="screen" href="/css/style.css"/>
-</head>
-<body>
-<%- include("./components/header.ejs", { page_name: "home", page_url:'/'}); %>
-<main id="home">
-    <section class="noir">
-        <div class="card" onclick="window.location.href='/books';" style="cursor: pointer;">
-            <h1>BOOKS</h1>
-            <div class="cardtext">
-                <img src="/images/FTB.jpg" alt="Faed To Black" title="Faed To Black" border="0" width="100%"/>
-                <h3>Faed To Black</h3>
-                <p>Ex-fairy godmother Gwendolyn Evenshine's world is turned upside down when her Seelie royal family members start dropping like flies. Thankfully, she's got Chessa Moon to back her up.</p>
-                <button><a href="/books">Learn More</a></button>
-            </div>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/css/montserrat.css" />
+    <link rel="stylesheet" media="screen" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include("./components/header.ejs", { page_name: "home", page_url:'/'});
+    %>
+    <main id="home">
+      <section class="noir">
+        <div
+          class="card"
+          onclick="window.location.href='/books';"
+          style="cursor: pointer"
+        >
+          <h1>BOOKS</h1>
+          <div class="cardtext">
+            <img
+              src="/images/FTB.jpg"
+              alt="Faed To Black"
+              title="Faed To Black"
+              border="0"
+              width="100%"
+            />
+            <h3>Faed To Black</h3>
+            <p>
+              Ex-fairy godmother Gwendolyn Evenshine's world is turned upside
+              down when her Seelie royal family members start dropping like
+              flies. Thankfully, she's got Chessa Moon to back her up.
+            </p>
+            <button><a href="/books">Learn More</a></button>
+          </div>
         </div>
-        <div class="card" onclick="window.location.href='/articles';" style="cursor: pointer;">
-            <h1>ARTICLES</h1>
-            <div class="cardtext">
-                <img src="/images/writersdigest2023.jpg" alt="Writer's Digest" title="Writer's Digest" border="0"
-                     width="100%"/>
-                <h3>Get Cozy With Sarah</h3>
-                <p>Read Sarah's latest articles in <em>Writer's Digest</em> magazine and Dan Koboldt's <em>Science in
-                        SF, Fact in Fantasy</em> series.</p>
-                <button><a href="/articles">Read More</a></button>
-            </div>
+        <div
+          class="card"
+          onclick="window.location.href='/articles';"
+          style="cursor: pointer"
+        >
+          <h1>ARTICLES</h1>
+          <div class="cardtext">
+            <img
+              src="/images/writersdigest2023.jpg"
+              alt="Writer's Digest"
+              title="Writer's Digest"
+              border="0"
+              width="100%"
+            />
+            <h3>Get Cozy With Sarah</h3>
+            <p>
+              Read Sarah's latest articles in <em>Writer's Digest</em> magazine
+              and Dan Koboldt's <em>Science in SF, Fact in Fantasy</em> series.
+            </p>
+            <button><a href="/articles">Read More</a></button>
+          </div>
         </div>
-        <div class="card" onclick="window.location.href='/gallery';" style="cursor: pointer;">
-            <h1>ARTWORK</h1>
-            <div class="cardtext">
-                <img src="images/precioustime.jpg" alt="Precious Time" title="Precious Time" border="0" width="100%"/>
-                <h3>Naughty Squids & Flirty Trolls</h3>
-                <p>Drop into Sarah's shop and check out her latest artwork on your favorite everyday items.</p>
-                <button><a href="/gallery">Visit Artwork</a></button>
-            </div>
+        <div
+          class="card"
+          onclick="window.location.href='/gallery';"
+          style="cursor: pointer"
+        >
+          <h1>ARTWORK</h1>
+          <div class="cardtext">
+            <img
+              src="images/precioustime.jpg"
+              alt="Precious Time"
+              title="Precious Time"
+              border="0"
+              width="100%"
+            />
+            <h3>Naughty Squids & Flirty Trolls</h3>
+            <p>
+              Drop into Sarah's shop and check out her latest artwork on your
+              favorite everyday items.
+            </p>
+            <button><a href="/gallery">Visit Artwork</a></button>
+          </div>
         </div>
-    </section>
-    <section class="cons">
+      </section>
+      <section class="cons">
         <h1>CONVENTIONS</h1>
         <div class="polaroids">
-            <div class="card-container">
-                <div class="cardz"
-                     style="--image: url('/images/con_carolinas_2022.jpg'); --angle: 15deg; --x: 7%; --y: 19%; --caption: 'ConCarolinas, 2022'">
-                </div>
-                <div class="cardz"
-                    style="--image: url('/images/me.jpg'); --angle: -10deg; --x: -37%; --y: -22%; --caption: 'Multiverse 2023'">
-                </div>
-                <div class="cardz"
-                     style="--image: url('/images/the_annual_writers_digest_conference2019.jpg'); --angle: 3deg; --x: -7%; --y: -23%; --caption: 'The Annual Writers Digest Conference, 2019'">
-                </div>
-                <div class="cardz"
-                     style="--image: url('/images/spoike.jpg'); --angle: -15deg; --x: -37%; --y: 18%; --caption: 'Casting a losing vote for Spike during CONjuration 2023'">
-                </div>
-                <div class="cardz"
-                     style="--image: url('/images/atl_comic_con_2023.jpg'); --angle: -4deg; --x: -20%; --y: 0%; --caption: 'Atlanta ComicCon, 2023'">
-                </div>
-                <div class="cardz"
-                     style="--image: url('/images/jordan_con_2021.jpg'); --angle: 7deg; --x: 10%; --y: -7%; --caption: 'JordanCon, 2021'">
-                </div>
+          <div class="card-container">
+            <div
+              class="cardz"
+              style="
+                --image: url('/images/con_carolinas_2022.jpg');
+                --angle: 15deg;
+                --x: 7%;
+                --y: 19%;
+                --caption: 'ConCarolinas, 2022';
+              "
+            ></div>
+            <div
+              class="cardz"
+              style="
+                --image: url('/images/me.jpg');
+                --angle: -10deg;
+                --x: -37%;
+                --y: -22%;
+                --caption: 'Multiverse 2023';
+              "
+            ></div>
+            <div
+              class="cardz"
+              style="
+                --image: url('/images/the_annual_writers_digest_conference2019.jpg');
+                --angle: 3deg;
+                --x: -7%;
+                --y: -23%;
+                --caption: 'The Annual Writers Digest Conference, 2019';
+              "
+            ></div>
+            <div
+              class="cardz"
+              style="
+                --image: url('/images/spoike.jpg');
+                --angle: -15deg;
+                --x: -37%;
+                --y: 18%;
+                --caption: 'Casting a losing vote for Spike during CONjuration 2023';
+              "
+            ></div>
+            <div
+              class="cardz"
+              style="
+                --image: url('/images/atl_comic_con_2023.jpg');
+                --angle: -4deg;
+                --x: -20%;
+                --y: 0%;
+                --caption: 'Atlanta ComicCon, 2023';
+              "
+            ></div>
+            <div
+              class="cardz"
+              style="
+                --image: url('/images/jordan_con_2021.jpg');
+                --angle: 7deg;
+                --x: 10%;
+                --y: -7%;
+                --caption: 'JordanCon, 2021';
+              "
+            ></div>
+          </div>
+          <div class="text-container">
+            <div class="textconwrap">
+              <%- include("./components/eventList.ejs", { dates: dates }); %>
             </div>
-            <div class="text-container">
-                <div class="textconwrap">
-                    <%- include("./components/eventList.ejs", { dates: dates }); %>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
-</main>
-</body>
-<%- include("./components/footer.ejs"); %>
-<footer>
+      </section>
+    </main>
+  </body>
+  <%- include("./components/footer.ejs"); %>
+  <footer>
     <script type="text/javascript" src="/js/script.js"></script>
-</footer>
+  </footer>
 </html>

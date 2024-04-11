@@ -1,66 +1,96 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Sarah J. Sover | Privacy Policy</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <!-- SEO tags -->
-    <meta name="description"
-          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers.">
-    <meta name="author" content="Studio SJS">
-    <meta property="og:image" content="http://www.sarahjsover.com/images/DCTB_3.png">
-    <meta property="og:url" content="http://www.sarahjsover.com"/>
-    <meta property="og:site_name" content="Sarah J Sover"/>
-    <meta property="og:title" content="Website of author Sarah J. Sover"/>
-    <meta property="og:description"
-          content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."/>
+    <meta
+      name="description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
+    <meta name="author" content="Studio SJS" />
+    <meta
+      property="og:image"
+      content="http://www.sarahjsover.com/images/DCTB_3.png"
+    />
+    <meta property="og:url" content="http://www.sarahjsover.com" />
+    <meta property="og:site_name" content="Sarah J Sover" />
+    <meta property="og:title" content="Website of author Sarah J. Sover" />
+    <meta
+      property="og:description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
     <!-- includes -->
     <script src="/js/jquery_3_2_1.min.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png"/>
-    <link rel="stylesheet" href="/css/montserrat.css">
-    <link rel="stylesheet" media="screen" href="/css/style.css"/>
-</head>
-<body>
-<%- include("./components/header.ejs", { page_name: "home", page_url:'/'}); %>
-<main id="privacy">
-    <section class="noir">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/css/montserrat.css" />
+    <link rel="stylesheet" media="screen" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include("./components/header.ejs", { page_name: "home", page_url:'/'});
+    %>
+    <main id="privacy">
+      <section class="noir">
         <h1 class="h1">Privacy Policy</h1>
         <div class="card">
-            <h1>WHO WE ARE</h1>
-            <div class="cardtext">
-                <p>This website is the home of fantasy author Sarah J. Sover. The website is:
-                    https://www.sarahjsover.com</p>
-                <p>To learn more about Sarah J. Sover and her work, please visit her <a href="<?php echo $path;?>about">author
-                        page</a>.</p>
-            </div>
+          <h1>WHO WE ARE</h1>
+          <div class="cardtext">
+            <p>
+              This website is the home of fantasy author Sarah J. Sover. The
+              website is: https://www.sarahjsover.com
+            </p>
+            <p>
+              To learn more about Sarah J. Sover and her work, please visit her
+              <a href="<?php echo $path;?>about">author page</a>.
+            </p>
+          </div>
         </div>
-        <div class="card"><h1>DATA COLLECTION</h1>
-            <div class="cardtext">
-                <p>Log files are stored on the web server saving details such as the visitor's IP address, browser type,
-                    referring page and time of visit.</p>
+        <div class="card">
+          <h1>DATA COLLECTION</h1>
+          <div class="cardtext">
+            <p>
+              Log files are stored on the web server saving details such as the
+              visitor's IP address, browser type, referring page and time of
+              visit.
+            </p>
 
-                <p>Cookies may be used to remember visitor preferences when interacting with the website.</p>
+            <p>
+              Cookies may be used to remember visitor preferences when
+              interacting with the website.
+            </p>
 
-                <p>Visitors who contact Sarah or her development team through the website will have the visitor's email
-                    and IP address stored on the server.</p>
-            </div>
+            <p>
+              Visitors who contact Sarah or her development team through the
+              website will have the visitor's email and IP address stored on the
+              server.
+            </p>
+          </div>
         </div>
-        <div class="card"><h1>VISITOR INFORMATION</h1>
-            <div class="cardtext">
-                <h3>How Information is Used</h3>
-                <p>The information is used to enhance the vistor's experience when using the website. E-mail addresses
-                    will not be sold, rented or leased to 3rd parties.</p>
-                <h3>Cookies</h3>
-                <p>Cookies are small digital signature files that are stored by your web browser that allow your
-                    preferences to be recorded when visiting the website. Also they may be used to track your return
-                    visits to the website. You may be able to block cookies via your browser settings but this may
-                    prevent you from access to certain features of the website.</p>
-            </div>
+        <div class="card">
+          <h1>VISITOR INFORMATION</h1>
+          <div class="cardtext">
+            <h3>How Information is Used</h3>
+            <p>
+              The information is used to enhance the vistor's experience when
+              using the website. E-mail addresses will not be sold, rented or
+              leased to 3rd parties.
+            </p>
+            <h3>Cookies</h3>
+            <p>
+              Cookies are small digital signature files that are stored by your
+              web browser that allow your preferences to be recorded when
+              visiting the website. Also they may be used to track your return
+              visits to the website. You may be able to block cookies via your
+              browser settings but this may prevent you from access to certain
+              features of the website.
+            </p>
+          </div>
         </div>
-    </section>
-</main>
-<%- include("./components/footer.ejs"); %>
-</body>
-<footer>
+      </section>
+    </main>
+    <%- include("./components/footer.ejs"); %>
+  </body>
+  <footer>
     <script type="text/javascript" src="/js/script.js"></script>
-</footer>
+  </footer>
 </html>

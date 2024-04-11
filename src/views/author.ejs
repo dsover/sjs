@@ -1,69 +1,132 @@
-
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Sarah J. Sover | Not for Everyone</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <!-- SEO tags -->
-  <meta name="description"
-        content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers.">
-  <meta name="author" content="Studio SJS">
-  <meta property="og:image" content="http://www.sarahjsover.com/images/DCTB_3.png">
-  <meta property="og:url" content="http://www.sarahjsover.com"/>
-  <meta property="og:site_name" content="Sarah J Sover"/>
-  <meta property="og:title" content="Website of author Sarah J. Sover"/>
-  <meta property="og:description"
-        content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."/>
-  <!-- includes -->
-  <script src="/js/jquery_3_2_1.min.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png"/>
-  <link rel="stylesheet" href="/css/montserrat.css">
-  <link rel="stylesheet" media="screen" href="/css/style.css"/>
-</head>
-<body>
-<%- include("./components/header.ejs", { page_name: "author", page_url:'/'}); %>
-<main id="about">
-  <section class="about">
-    <div class="card-one">
-      <h1>SARAH J. SOVER</h1>
-      <div class="cardtext">
-        <img src="../images/sarahjsover.jpg" alt="Fairy Godmurder" title="Fairy Godmurder" border="0" width="100%" />
-      </div>
-    </div>
-    <div class="card-two"><h1>MEET SARAH</h1>
-      <div class="cardtext">
-        <p>Sarah J. Sover is the author of fantasy crossover novels, short stories, and nonfiction articles. Sarah writes the Urban Fantasy Fractured Fae Series (<em>Fairy Godmurder, <em>Faed to Black</em>, and the forthcoming <em>Pixie Dusted</em>) for Falstaff Books. She calls it Jessica Jones with sparkle. Her comedic fantasy Double-Crossing the Bridge</em>, about a group of drunk trolls pulling a perilous heist, originally released in 2019 and was re-released by Falstaff in 2022 with a sequel, <em>Trolled</em>, slated for 2024/2025. Her short fiction has appeared in anthologies, and she’s written articles for Writer’s Digest Magazine, WritersDigest.com, and for Dan Koboldt’s Putting the Fact in Fantasy. Sarah has a degree in Biology and a background in animal care, which she uses to thoroughly gross out readers. She spends her time raising two little forces of nature with her husband Alex in John’s Creek, Ga. In addition to writing, Sarah enjoys binging all SFF media, blues dancing, painting, and pretending to play guitar. She can frequently be found pillaging Hades or Hyrule while sipping on a good IPA and pinned beneath her rescue pup Gandalf the Grey.</p>
-        <div id="social-platforms">
-          <%- include("./components/social.ejs"); %>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sarah J. Sover | Not for Everyone</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- SEO tags -->
+    <meta
+      name="description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
+    <meta name="author" content="Studio SJS" />
+    <meta
+      property="og:image"
+      content="http://www.sarahjsover.com/images/DCTB_3.png"
+    />
+    <meta property="og:url" content="http://www.sarahjsover.com" />
+    <meta property="og:site_name" content="Sarah J Sover" />
+    <meta property="og:title" content="Website of author Sarah J. Sover" />
+    <meta
+      property="og:description"
+      content="Website of Sarah J. Sover, author of fantasy novels, reader of books, and creator of mystical realms filled with imaginary creatures with magical powers."
+    />
+    <!-- includes -->
+    <script src="/js/jquery_3_2_1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/css/montserrat.css" />
+    <link rel="stylesheet" media="screen" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include("./components/header.ejs", { page_name: "author",
+    page_url:'/'}); %>
+    <main id="about">
+      <section class="about">
+        <div class="card-one">
+          <h1>SARAH J. SOVER</h1>
+          <div class="cardtext">
+            <img
+              src="../images/sarahjsover.jpg"
+              alt="Fairy Godmurder"
+              title="Fairy Godmurder"
+              border="0"
+              width="100%"
+            />
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="media" id="mediakit" name="mediakit">
-    <div class="card">
-      <h1>CONTACT INFO</h1>
-      <div class="cardtext">
-        <p>
-          Email: SarahJSover@gmail.com<br />
-          Social: Twitter, Facebook, and Instagram as: SarahJSover<br />
-          Publisher: Falstaff Books | <a href="https://falstaffbooks.com" target="_blank" class="textlink">www.falstaffbooks.com</a></p>
-      </div>
-    </div>
-    <div class="card"><h1>50 WORD BIO</h1>
-      <div class="cardtext">
-        <p>Sarah J. Sover is the author of the Urban Fantasy Fractured Fae series (<em>Fairy Godmurder</em>, <em>Faed to Black</em>) and the comedic fantasy <em>Double-Crossing the Bridge</em>, all from Falstaff Books. She is a contributor to short story anthologies, to Dan Koboldt’s <em>Putting the Fact in Fantasy</em>, and to Writer’s Digest Magazine.</p>
-      </div>
-    </div>
-    <div class="card"><h1>100 WORD BIO</h1>
-      <div class="cardtext">
-        <p>Sarah J. Sover is the author of fantasy crossover novels and short stories as well as nonfiction articles for Writer’s Digest Magazine. The Urban Fantasy Fractured Fae series includes <em>Fairy Godmurder</em>, <em>Faed to Black</em>, and the forthcoming <em>Pixie Dusted</em>. Her comedic fantasy <em>Double-Crossing the Bridge</em> has a sequel slated for release in 2024/2025 from Falstaff Books. Sarah’s short fiction has appeared in anthologies, and she’s a contributor to Dan Koboldt’s <em>Putting the Fact in Fantasy</em>. She lives in John’s Creek, Ga where she raises two little forces of nature with her husband Alex. Find Sarah online at SarahJSover.com.</p>
-      </div>
-    </div>
-  </section>
-</main>
-<%- include("./components/footer.ejs"); %>
-</body>
-<footer>
-  <script type="text/javascript" src="/js/script.js"></script>
-</footer>
+        <div class="card-two">
+          <h1>MEET SARAH</h1>
+          <div class="cardtext">
+            <p>
+              Sarah J. Sover is the author of fantasy crossover novels, short
+              stories, and nonfiction articles. Sarah writes the Urban Fantasy
+              Fractured Fae Series (<em
+                >Fairy Godmurder, <em>Faed to Black</em>, and the forthcoming
+                <em>Pixie Dusted</em>) for Falstaff Books. She calls it Jessica
+                Jones with sparkle. Her comedic fantasy Double-Crossing the
+                Bridge</em
+              >, about a group of drunk trolls pulling a perilous heist,
+              originally released in 2019 and was re-released by Falstaff in
+              2022 with a sequel, <em>Trolled</em>, slated for 2024/2025. Her
+              short fiction has appeared in anthologies, and she’s written
+              articles for Writer’s Digest Magazine, WritersDigest.com, and for
+              Dan Koboldt’s Putting the Fact in Fantasy. Sarah has a degree in
+              Biology and a background in animal care, which she uses to
+              thoroughly gross out readers. She spends her time raising two
+              little forces of nature with her husband Alex in John’s Creek, Ga.
+              In addition to writing, Sarah enjoys binging all SFF media, blues
+              dancing, painting, and pretending to play guitar. She can
+              frequently be found pillaging Hades or Hyrule while sipping on a
+              good IPA and pinned beneath her rescue pup Gandalf the Grey.
+            </p>
+            <div id="social-platforms">
+              <%- include("./components/social.ejs"); %>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="media" id="mediakit" name="mediakit">
+        <div class="card">
+          <h1>CONTACT INFO</h1>
+          <div class="cardtext">
+            <p>
+              Email: SarahJSover@gmail.com<br />
+              Social: Twitter, Facebook, and Instagram as: SarahJSover<br />
+              Publisher: Falstaff Books |
+              <a
+                href="https://falstaffbooks.com"
+                target="_blank"
+                class="textlink"
+                >www.falstaffbooks.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h1>50 WORD BIO</h1>
+          <div class="cardtext">
+            <p>
+              Sarah J. Sover is the author of the Urban Fantasy Fractured Fae
+              series (<em>Fairy Godmurder</em>, <em>Faed to Black</em>) and the
+              comedic fantasy <em>Double-Crossing the Bridge</em>, all from
+              Falstaff Books. She is a contributor to short story anthologies,
+              to Dan Koboldt’s <em>Putting the Fact in Fantasy</em>, and to
+              Writer’s Digest Magazine.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h1>100 WORD BIO</h1>
+          <div class="cardtext">
+            <p>
+              Sarah J. Sover is the author of fantasy crossover novels and short
+              stories as well as nonfiction articles for Writer’s Digest
+              Magazine. The Urban Fantasy Fractured Fae series includes
+              <em>Fairy Godmurder</em>, <em>Faed to Black</em>, and the
+              forthcoming <em>Pixie Dusted</em>. Her comedic fantasy
+              <em>Double-Crossing the Bridge</em> has a sequel slated for
+              release in 2024/2025 from Falstaff Books. Sarah’s short fiction
+              has appeared in anthologies, and she’s a contributor to Dan
+              Koboldt’s <em>Putting the Fact in Fantasy</em>. She lives in
+              John’s Creek, Ga where she raises two little forces of nature with
+              her husband Alex. Find Sarah online at SarahJSover.com.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include("./components/footer.ejs"); %>
+  </body>
+  <footer>
+    <script type="text/javascript" src="/js/script.js"></script>
+  </footer>
 </html>
