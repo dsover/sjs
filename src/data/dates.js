@@ -1,14 +1,5 @@
 module.exports = [
   {
-    date: "Apr 6",
-    sup: "th",
-    year: "2024",
-    eventName: "Crazy Book Lady Event",
-    type: "Participant",
-    location: "Acworth, GA",
-    link: "https://www.thecrazybookladyga.com/",
-  },
-  {
     date: "Apr 19 - 21",
     sup: "st",
     year: "2024",
