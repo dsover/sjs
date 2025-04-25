@@ -1,14 +1,5 @@
 module.exports = [
   {
-    date: "December 8",
-    sup: "th",
-    year: "2024",
-    eventName: "Nerdy Wonderland A Holiday Market at The Lost Druid",
-    type: "Vendor",
-    location: "Avondale Estates, GA",
-    link: "https://nerdywonderland.com/",
-  },
-  {
     date: "Apr 25 - 27",
     sup: "th",
     year: "2025",
@@ -18,6 +9,24 @@ module.exports = [
     link: "https://www.jordancon.org/",
   },
   {
+    date: "May 30 - June 1",
+    sup: "st",
+    year: "2025",
+    eventName: "ConCarolinas",
+    type: "Guest",
+    location: "Charlotte, NC",
+    link: "https://concarolinas.org/",
+  },
+  {
+    date: "July 11-13",
+    sup: "th",
+    year: "2025",
+    eventName: "CONgregate",
+    type: "Guest",
+    location: "Winston-Salem, NC",
+    link: "https://con-gregate.com/",
+  },
+  {
     date: "Aug 28 - Sept 1",
     sup: "st",
     year: "2025",
@@ -25,5 +34,15 @@ module.exports = [
     type: "Attending Professional",
     location: "Atlanta, GA",
     link: "https://www.dragoncon.org/",
-  }
+  },
+  {
+    date: "Oct 17-19",
+    sup: "th",
+    year: "2025",
+    eventName: "Multiverse",
+    type: "guest",
+    location: "Peachtree City, GA",
+    link: "https://www.multiversecon.org/",
+  },
+
 ];

@@ -20,14 +20,19 @@
     "yarn": ">1.22.18"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "prettier": "^3.5.3"
   },
   "bundleDependencies": [],
   "private": true,
-  "main": "server.js"
+  "main": "server.js",
+  "devDependencies": {
+    "prettier-plugin-ejs": "^1.0.3"
+  }
 }
